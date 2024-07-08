@@ -112,11 +112,22 @@
             justify-content: space-between;
         }
 
+        .display_block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         @media screen and (max-width: 770px) and (min-width: 230px){
             .coniction_style{
                 width: 50% !important;
             }
             .conictionLink_style{
                 width: 50% !important;
+            }
+        }
+        @media screen and (max-width: 506px) and (min-width: 230px){
+            span.phone_topbar {
+                font-size: 15px;
             }
         }
