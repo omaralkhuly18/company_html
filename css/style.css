@@ -57,6 +57,18 @@
             margin: 0 !important;
         }
 
+        @media screen and (max-width: 745px) and (min-width: 453px){
+            .header_opend{
+                width: 20%;
+            }
+        }
+
+        @media screen and (max-width: 453px) and (min-width: 230px){
+            .header_opend{
+                width: 30%;
+            }
+        }
+
         @media screen and (max-width: 994px) and (min-width: 250px) {
 
             .nav_item_responsive,
