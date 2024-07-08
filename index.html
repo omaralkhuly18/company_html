@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xander</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* تطبيق الخط على الموقع ككل */
+        body {
+            font-family: 'Alexandria', sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        /* لإظهار القائمة المنسدلة عند التحويم */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        .container_tag {
+            width: 100%;
+        }
+
+        .bg-orange {
+            background-color: #ff6600;
+        }
+
+        .coniction_style {
+            width: 70%;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .conictionLink_style {
+            width: 30%;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+    <!-- شريط الاتصال العلوي -->
+    <div class="d-flex" style="background-color: #002f4b; color: white;">
+        <div class="container_tag  d-flex justify-content-between">
+            <div class="d-flex coniction_style">
+                <div class=" ms-3">
+                    <i class="fas fa-phone-alt me-1" style="color: #ff6600;"></i> إدارة المبيعات: 01289535000
+                </div>
+                <div class=" ms-3 display_none">
+                    <i class="fas fa-phone-alt me-1" style="color: #ff6600;"></i> إدارة المبيعات: 01289535000
+                </div>
+                <div class="ms-3 ms-3 display_none">
+                    <i class="fas fa-phone-alt me-1" style="color: #ff6600;"></i> الهاتف الثابت: 0237607887
+                </div>
+            </div>
+            <div class="d-flex align-items-center bg-orange conictionLink_style px-3 py-2">
+                <a href="#" class="text-white">
+                    اتصل بنا
+                </a>
+                <i class="fas fa-arrow-left ms-2 text-white"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand header_opend" href="index.html">
+                <img src="image/128x128.png" alt="Xander">
+            </a>
+            <ul class="navbar-nav d-flex justify-content-end flex-grow-1 pe-3 nav_item_responsive">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"> الرئيسية </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">  من نحن  </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                         الشهادات 
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"> المصانع </a></li>
+                        <li><a class="dropdown-item" href="#"> المنتجات </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " aria-current="page" href="#"> النقل والتركيب </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#"> النقل </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" aria-current="page" href="#"> التركيب </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#"> الإنجليزية </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#"> الكتالوج </a>
+                </li>
+            </ul>
+            <button class="navbar-toggler d-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand sidebar_opend" href="index.html">
+                        <img src="image/128x128.png" alt="Xander">
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"> الرئيسية </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">  من نحن  </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                 الشهادات 
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"> المصانع </a></li>
+                                <li><a class="dropdown-item" href="#"> المنتجات </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="#"> النقل والتركيب </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#"> النقل </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="#"> التركيب </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#"> الإنجليزية </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#"> الكتالوج </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم البطل -->
+    <div class="bg-dark text-white text-center d-flex justify-content-center align-items-center"
+        style="height: 600px; background-image: url('https://via.placeholder.com/1920x600'); background-size: cover; background-position: center;">
+        <div>
+            <h1 class="display-4">بيتا بايب</h1>
+            <p class="lead">لتصنيع الأنابيب البلاستيكية</p>
+            <a href="#" class="btn btn-warning">تعرف على المزيد</a>
+        </div>
+    </div>
+
+    <!-- قسم الأهداف، الرؤية، الفريق -->
+    <div class="container-fluid p-0">
+        <div class="row g-0 text-center">
+            <div class="col-md-4">
+                <div
+                    class="p-4 bg-primary text-white h-100 d-flex flex-column justify-content-center align-items-center">
+                    <h3 class="text-warning">01</h3>
+                    <h5>أهدافنا</h5>
+                    <p>تسعى بيتا بايب لتوفير أنابيب بلاستيكية عالية الجودة تتوافق مع المعايير الصناعية والفنية باستخدام
+                        مواد خام عالية الجودة ومعدات تصنيع حديثة.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div
+                    class="p-4 bg-warning text-dark h-100 d-flex flex-column justify-content-center align-items-center">
+                    <h3>02</h3>
+                    <h5>رؤيتنا</h5>
+                    <p>توفير حلول مبتكرة ومتقدمة في مجال تصنيع أنابيب البلاستيك UPVC. يمكن تطوير تقنيات جديدة وتحسينات
+                        في التصميم والأداء لتلبية متطلبات العملاء والصناعة.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 bg-light h-100 d-flex flex-column justify-content-center align-items-center">
+                    <h3 class="text-warning">03</h3>
+                    <h5>فريق العمل</h5>
+                    <p>أعضاء الفريق لديهم معرفة واسعة في مجال تصنيع أنابيب البلاستيك UPVC. يفهمون المبادئ الأساسية
+                        لعملية التصنيع اللازمة لإنتاج أنابيب عالية الجودة.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- قسم من نحن -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>من نحن</h2>
+                <p>بيتا بايب هي نتيجة 20 عامًا من الخبرة في مجال تصنيع أفضل أنواع الأنابيب البلاستيكية UPVC. تتميز
+                    الشركة بالعمل بأعلى جودة ممكنة من المواد الخام لتحقيق أعلى مستوى من الجودة والفعالية في مجال تصنيع
+                    الأنابيب البلاستيكية بجميع أنواعها.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="من نحن">
+            </div>
+        </div>
+    </div>
+
+    <!-- قسم حلول الويب الحديثة -->
+    <section class="bg-primary">
+        <div class="container-fluid overflow-hidden">
+            <div class="row">
+                <div class="col-12 col-md-6 order-1 order-md-0 align-self-md-end">
+                    <div class="row py-3 py-sm-5 py-xl-9 mt-md-10 justify-content-sm-center">
+                        <div class="col-12 col-sm-10">
+                            <h2 class="display-2 fw-bolder mb-4 text-white">نحن نقدم حلول ويب حديثة</h2>
+                            <div class="row">
+                                <div class="col-12 col-xxl-8">
+                                    <p class="fs-5 mb-5 text-white">نعمل بطريقة مخصصة من خلال ابتكار وإدارة مشاريع عبر
+                                        الإنترنت بالكامل بشراكات طويلة الأمد.</p>
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2 d-sm-flex">
+                                <button type="button" class="btn btn-warning bsb-btn-2xl rounded-pill">استكشف
+                                    الآن</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 p-0">
+                    <img class="img-fluid w-100 h-100 object-fit-cover" loading="lazy"
+                        src="https://via.placeholder.com/500x300" alt="نحن نقدم حلول ويب حديثة">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم استخدامات بيتا بايب -->
+    <div class="bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">استخدامات بيتا بايب</h2>
+            <p>شبكات مياه الشرب، شبكات الري، التصريف الصناعي، التصريف، شبكات الصرف الصحي والتهوية، التعدين، أنابيب آبار
+                النفط، أنابيب الكهرباء والهاتف، أنابيب الغاز.</p>
+        </div>
+    </div>
+
+    <!-- قسم الشركاء -->
+    <div class="container my-5">
+        <h2 class="text-center">الشركاء الذين وثقوا بنا</h2>
+        <div class="row text-center">
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/150x150" class="img-fluid" alt="شريك 1">
+            </div>
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/150x150" class="img-fluid" alt="شريك 2">
+            </div>
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/150x150" class="img-fluid" alt="شريك 3">
+            </div>
+            <div class="col-md-3">
+                <img src="https://via.placeholder.com/150x150" class="img-fluid" alt="شريك 4">
+            </div>
+        </div>
+    </div>
+
+    <!-- التذييل -->
+    <footer class="footer text-center bg-dark text-white py-3">
+        <div class="container">
+            <p>&copy; 2024 بيتا بايب. جميع الحقوق محفوظة.</p>
+            <p>
+                <a href="#" class="text-white me-3">سياسة الخصوصية</a>
+                <a href="#" class="text-white">شروط الاستخدام</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
