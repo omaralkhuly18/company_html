@@ -15,7 +15,7 @@ function scrollFunction() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(hideLoadingScreen, 5000); // Simulate loading time
+    setTimeout(hideLoadingScreen, 3000); // Simulate loading time
     repeatAnimation(); // Start the repeated animation
 });
 
