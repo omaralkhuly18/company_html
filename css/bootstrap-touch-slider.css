@@ -26,18 +26,6 @@
     margin: auto;
     width: 100% !important;
 }
-
-.carousel-inner{
-    height: 430px;
-}
-
-.hero_bg .item {
-    height: 100%;
-}
-
-.hero_bg .slide-image {
-    height: 100% !important;
-}
 /********************
 *****Slide effect
 **********************/
@@ -302,6 +290,18 @@
 
 /*---------- MEDIA 480px ----------*/
 @media  (max-width: 768px) {
+    .carousel-inner{
+        height: 430px;
+    }
+    
+    .hero_bg .item {
+        height: 100%;
+    }
+    
+    .hero_bg .slide-image {
+        height: 100% !important;
+    }
+    
     .slide-text {
         padding: 10px 50px;
     }

@@ -123,6 +123,7 @@
 
         .dropdown:hover>.dropdown-menu {
             display: block;
+            width: 100%;
         }
 
         .navbar {
@@ -131,12 +132,6 @@
             height: 110px;
             width: 100%;
             background-color: #00000014;
-        }
-
-        @media screen and (max-width: 500px) and (min-width: 230px) {
-            .navbar {
-                position: fixed;
-            }
         }
 
         .navbar-nav .nav-link.active,
@@ -246,8 +241,6 @@
 
         .offcanvas-body {
             padding: 2%;
-            box-shadow: white 0px 0px 9px 1px;
-            border-top: solid #7f3300 2px;
         }
 
         .btn-close {
@@ -286,12 +279,20 @@
         }
 
         @media screen and (max-width: 770px) and (min-width: 230px) {
+            .navbar {
+                position: fixed;
+            }
+            
             .coniction_style {
                 width: 50% !important;
             }
 
             .conictionLink_style {
                 width: 50% !important;
+            }
+            .offcanvas-body {
+                height: 270px;
+                overflow: scroll;
             }
         }
 
