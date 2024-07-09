@@ -25,8 +25,10 @@ function hideLoadingScreen() {
     loadingBage.classList.add("hidden");
     loadingScreen.classList.add("hidden");
     var mainContent = document.getElementById("main-content");
-    mainContent.style.display = "block";
-    document.body.style.overflow = "auto";
+    if(mainContent !== null){
+        mainContent.style.display = "block";
+        document.body.style.overflow = "auto";
+    }
 }
 
 function repeatAnimation() {
