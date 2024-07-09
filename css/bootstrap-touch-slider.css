@@ -27,6 +27,17 @@
     width: 100% !important;
 }
 
+.carousel-inner{
+    height: 430px;
+}
+
+.hero_bg .item {
+    height: 100%;
+}
+
+.hero_bg .slide-image {
+    height: 100% !important;
+}
 /********************
 *****Slide effect
 **********************/
@@ -73,7 +84,7 @@
     opacity: 0;
     width: 45px;
     height: 45px;
-    z-index: 100;
+    z-index: 60;
     color: #ffffff;
     display: block;
     font-size: 24px;

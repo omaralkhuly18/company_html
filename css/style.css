@@ -173,11 +173,11 @@
             margin: 0 !important;
         }
 
-        @media screen and (max-width: 453px) and (min-width: 230px) {
+        /* @media screen and (max-width: 453px) and (min-width: 230px) {
             .header_opend {
                 width: 50% !important;
             }
-        }
+        } */
 
         @media screen and (max-width: 745px) and (min-width: 453px) {
             .header_opend {
@@ -190,6 +190,10 @@
                 width: 80%;
             }
 
+            .header_opend img {
+                width: 60%;
+            }
+            
             .nav_item_responsive,
             .display_none {
                 display: none !important;
