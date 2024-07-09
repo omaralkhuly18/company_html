@@ -31,16 +31,16 @@
                 </div>
             </div>
             <div class="d-flex align-items-center bg-orange conictionLink_style px-3 py-2">
+                <i class="fas fa-arrow-left ms-2 text-white"></i>
                 <a href="#" class="text-white">
                     call us
                 </a>
-                <i class="fas fa-arrow-left ms-2 text-white"></i>
             </div>
         </div>
     </div>
 
     <!-- شريط التنقل -->
-    <nav class="navbar">
+    <nav class="navbar" id="header">
         <div class="container-fluid">
             <a class="navbar-brand header_opend" href="index.html">
                 <img src="image/logo_dark.png" alt="Comapny">
@@ -80,7 +80,9 @@
             </ul>
             <button class="navbar-toggler d-none" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                    <i class="fa-solid fa-bars" id="toggler-icon"></i>
+                </span>
             </button>
             <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
@@ -109,7 +111,7 @@
                             </ul>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" aria-current="page" href="#" Transportation and installation</a>
+                            <a class="nav-link" aria-current="page" href="#" >Transportation and installation</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="#">Transport </a>
@@ -258,6 +260,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/javascript.js"></script>
 </body>
 
 </html>
