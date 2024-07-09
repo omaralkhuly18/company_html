@@ -73,11 +73,6 @@
     transition: opacity ease-in-out 1s;
 }
 
-
-
-
-
-
 /*---------- LEFT/RIGHT ROUND CONTROL ----------*/
 .control-round .carousel-control {
     top: 47%;
@@ -194,8 +189,6 @@
     transition: background-color 0.3s ease;
 }
 
-
-
 /*---------- SLIDE CAPTION ----------*/
 .slide_style_left {
     text-align: left !important;
@@ -291,11 +284,6 @@
     transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
-
-
-
-
-
 /*------------------------------------------------------*/
 /* RESPONSIVE
 /*------------------------------------------------------*/
@@ -311,7 +299,6 @@
         font-size: 18px;
     }
 }
-
 
 /*---------- MEDIA 480px ----------*/
 @media  (max-width: 768px) {
