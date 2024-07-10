@@ -207,6 +207,14 @@
             .navbar-nav .dropdown-menu {
                 position: static !important;
             }
+
+            .navbar {
+                position: fixed;
+            }
+            .offcanvas-body {
+                height: 270px;
+                overflow: scroll;
+            }
         }
 
         .offcanvas-header {
@@ -290,7 +298,7 @@
             .conictionLink_style {
                 width: 50% !important;
             }
-            
+
             .offcanvas-body {
                 height: 270px;
                 overflow: scroll;
