@@ -12,7 +12,7 @@
             margin: 0;
         }
 
-        .offcanvas-backdrop{
+        .offcanvas-backdrop {
             background-color: #00000059 !important;
         }
 
@@ -188,7 +188,7 @@
             .header_opend img {
                 width: 60%;
             }
-            
+
             .nav_item_responsive,
             .display_none {
                 display: none !important;
@@ -211,9 +211,16 @@
             .navbar {
                 position: fixed;
             }
+
             .offcanvas-body {
                 height: 270px;
                 overflow: scroll;
+            }
+        }
+
+        @media screen and (max-width: 400px) and (min-width: 250px){
+            .header_opend img {
+                width: 75%;
             }
         }
 
@@ -290,7 +297,7 @@
             .navbar {
                 position: fixed;
             }
-            
+
             .coniction_style {
                 width: 50% !important;
             }
@@ -322,4 +329,73 @@
         .hero_bg {
             width: 100%;
             height: auto;
+        }
+
+        .style_width {
+            width: 19%;
+            margin: 0 6px;
+            transition: 1s;
+        }
+
+        @media screen and (max-width: 1000px) and (min-width: 700px){
+            .style_width{
+                width: 30%;
+            }
+        }
+
+        @media screen and (max-width: 699px) and (min-width: 500px){
+            .style_width{
+                width: 40%;
+            }
+        }
+
+        @media screen and (max-width: 499px) and (min-width: 250px){
+            .style_width{
+                width: 50%;
+            }
+        }
+
+        .style_width p,
+        .style_width h5 {
+            color: black;
+        }
+
+        .style_width {
+            background: linear-gradient(white, white 50%, #FEC63F 50%, #FEC63F);
+            background-size: 100% 200%;
+            transition: background 1s;
+        }
+
+        .style_width:hover {
+            background-position: 100% 100%;
+        }
+
+        .style_before_bg {
+            width: 100%;
+            height: 100px;
+            margin: 6% 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        img.style_bg_before {
+            position: relative;
+            width: 90px;
+            height: 90px;
+        }
+
+        .style_before_bg::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 65%;
+            height: 123px;
+            background-color: #d6f0f1;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            padding: 2%;
+            z-index: 0;
         }
