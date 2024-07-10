@@ -1,88 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading Screen with Animation Example</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <style>
-        body,
-        html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #loading-screen {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: fixed;
-            width: 40%;
-            height: 20%;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: white;
-            z-index: 10000;
-            transition: opacity 1s ease;
-        }
-
-        #loading-screen.hidden {
-            opacity: 0;
-            visibility: hidden;
-            display: none;
-        }
-
-        #main-content {
-            display: none;
-            padding: 20px;
-        }
-    </style>
+    <title>Digital Marketing Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
-
-    <div id="loading-screen" class="animate__animated animate__rubberBand">
-        <div>
-          <span class="spinner-border" role="status" aria-hidden="true"></span>
-          <h1>Loading...</h1>
+    <div class="container py-5">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-6 position-relative">
+                <img src="image/slide1.jpg" class="img-fluid rounded" alt="Team Image">
+                <img src="image/slide2.jpg" class="img-fluid rounded position-absolute" style="width: 70%; bottom: -15px; left: -30px;" alt="Handshake Image">
+            </div>
+            <div class="col-md-6">
+                <h1 class="text-warning">أفضل حلول التسويق الرقمي</h1>
+                <p>هناك العديد من الاختلافات في المقاطع المتاحة ولكن الغالبية عانت من التغيير بشكل ما، عن طريق حقن الكلمات العشوائية التي لا تبدو ذلك قليلا.</p>
+                <div class="mb-3">
+                    <div class="d-flex align-items-start mb-2">
+                        <img src="image/icons/icon_digital_services.png" alt="Marketing Icon" class="me-2" style="width: 24px;">
+                        <div>
+                            <h5>الريادة في التسويق</h5>
+                            <p>معرفة التقنيات تحكم بشكل أفضل من أي شخص آخر والتي نطبقها في عملنا اليومي</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <img src="image/icons/teaching_icon_img.png" alt="Expert Icon" class="me-2" style="width: 24px;">
+                        <div>
+                            <h5>المطورون الخبراء</h5>
+                            <p>معرفة التقنيات تحكم بشكل أفضل من أي شخص آخر والتي نطبقها في عملنا اليومي</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-warning text-white">اكتشف أكثر</a>
+            </div>
         </div>
-      </div>
-    
-      <div id="main-content">
-        <h2>Content Loaded</h2>
-        <p>Scroll down to see the sticky effect</p>
-      </div>
-    
-      <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          setTimeout(hideLoadingScreen, 5000); // Simulate loading time
-          repeatAnimation(); // Start the repeated animation
-        });
-    
-        function hideLoadingScreen() {
-          var loadingScreen = document.getElementById("loading-screen");
-          loadingScreen.classList.add("hidden");
-          var mainContent = document.getElementById("main-content");
-          mainContent.style.display = "block";
-          document.body.style.overflow = "auto";
-        }
-    
-        function repeatAnimation() {
-          setInterval(function() {
-            var loadingScreen = document.getElementById("loading-screen");
-            loadingScreen.classList.remove("animate__rubberBand");
-            void loadingScreen.offsetWidth; // Trigger reflow to restart animation
-            loadingScreen.classList.add("animate__rubberBand");
-          }, 900); // Repeat every 3 seconds
-        }
-    </script>
-</body>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
