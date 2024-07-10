@@ -10,6 +10,7 @@
 
         .navbar-nav {
             margin: 0;
+            float: none;
         }
 
         .offcanvas-backdrop {
@@ -351,7 +352,7 @@
 
         @media screen and (max-width: 499px) and (min-width: 250px){
             .style_width{
-                width: 50%;
+                width: 70%;
             }
         }
 
