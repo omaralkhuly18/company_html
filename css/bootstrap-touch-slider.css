@@ -277,7 +277,7 @@
     padding: 17px 30px;
     white-space: nowrap;
     letter-spacing: 1px;
-    background: #00bfff;
+    background-color: #ff6600;
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
@@ -291,9 +291,28 @@
 .slide-text>a:hover,
 .slide-text>a:active {
     color: #ffffff;
-    background: #222222;
     -webkit-transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
     transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+
+.slide-text>a:hover{
+    background-color: #002f4b;
+}
+
+.style_color_text{
+    color: #ff6600 !important;
+}
+
+.bg_color_btn{
+    background-color: #ff6600 !important;
+    border-color: #ff6600 !important;
+    transition: 1s;
+}
+
+.bg_color_btn:hover{
+    background-color: #002f4b !important;
+    border-color: #002f4b !important;
 }
 
 /*------------------------------------------------------*/
