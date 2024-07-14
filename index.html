@@ -396,7 +396,7 @@
                     </div>
 
                     <div class="ag-courses-item_title">
-                       نجاح وسائل التواصل الاجتماعي: استراتيجيات متقدمة لك.
+                        نجاح وسائل التواصل الاجتماعي: استراتيجيات متقدمة لك.
                     </div>
 
                     <div class="ag-courses-item_date-box">
@@ -451,12 +451,112 @@
         </div>
     </div>
 
-    <!-- قسم استخدامات بيتا بايب -->
-    <div class="bg-dark text-white py-5">
+    <!-- demonstration video -->
+    <section class="video-section">
         <div class="container">
-            <h2 class="text-center mb-4">استخدامات بيتا بايب</h2>
-            <p>شبكات مياه الشرب، شبكات الري، التصريف الصناعي، التصريف، شبكات الصرف الصحي والتهوية، التعدين، أنابيب آبار
-                النفط، أنابيب الكهرباء والهاتف، أنابيب الغاز.</p>
+            <h2>
+                قسم الفيديو
+            </h2>
+            <div class="video-thumbnail">
+                <img src="image/Business_company.jpg" alt="Video Thumbnail">
+                <div class="play-button">
+                    <div id="play_button">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <h3>
+                        الوكالة الأكثر ثقة
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- fun fact text -->
+
+    <section class="fun-fact-section">
+        <div class="container bg_section_text">
+            <div class="position_section row">
+                <div class="position_section_1 col-lg-6">
+                    <div class="inner_parents_1 row">
+                        <span>
+                            حقيقة ممتعة
+                        </span>
+                        <h2>
+                            نحن خبراء متميزون في هذا المجال.
+                        </h2>
+                        <div class="text_words">
+                            هناك العديد من الأشكال المختلفة للمقاطع المتوفرة ولكن تم تعديل غالبيتها بطريقة ما،
+                            إما عن طريق الفكاهة أو الكلمات المعتمدة بشكل عشوائي.
+                        </div>
+                    </div>
+                </div>
+                <div class="position_section_2 col-lg-6">
+                    <div class="inner_parents_2 row">
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="inner_fun_fact">
+                                <div class="content_fun_fact">
+                                    <div class="img_like_icons">
+                                        <img src="image/icons/job_promotion.png" alt="job_promotion">
+                                    </div>
+                                    <div class="number_span">
+                                        <span class="span_numbers">
+                                            2000
+                                        </span>
+                                    </div>
+                                    <h6>
+                                        المشاريع المنجزة
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="inner_fun_fact">
+                                <div class="content_fun_fact">
+                                    <div class="img_like_icons">
+                                        <img src="image/icons/feedback.png" alt="feedback">
+                                    </div>
+                                    <div class="number_span">
+                                        <span class="span_numbers">
+                                            2000
+                                        </span>
+                                    </div>
+                                    <h6>
+                                        زبائن يشعرون بالرضى
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="inner_fun_fact">
+                                <div class="content_fun_fact">
+                                    <div class="img_like_icons">
+                                        <img src="image/icons/teaching_FunFact.png" alt="teaching_FunFact">
+                                    </div>
+                                    <div class="number_span">
+                                        <span class="span_numbers">
+                                            2000
+                                        </span>
+                                    </div>
+                                    <h6>
+                                        فرق الخبراء
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close_vedio" id="close-button">&times;</span>
+            <video controls>
+                <source src="https://youtu.be/EWEDUrd1i5g?si=kTa6vTjCrOQ_auqR" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </div>
 
@@ -489,6 +589,8 @@
             </p>
         </div>
     </footer>
+
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

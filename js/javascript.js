@@ -22,10 +22,16 @@ document.addEventListener("DOMContentLoaded", function () {
 function hideLoadingScreen() {
     var loadingBage = document.getElementById("loading_page");
     var loadingScreen = document.getElementById("loading-screen");
-    loadingBage.classList.add("hidden");
-    loadingScreen.classList.add("hidden");
+    
+    if (loadingBage !== null) {
+        loadingBage.classList.toggle("hidden");
+    }
+    if (loadingScreen !== null) {
+        loadingScreen.classList.toggle("hidden");
+    }
+    
     var mainContent = document.getElementById("main-content");
-    if(mainContent !== null){
+    if (mainContent !== null) {
         mainContent.style.display = "block";
         document.body.style.overflow = "auto";
     }
@@ -34,15 +40,18 @@ function hideLoadingScreen() {
 function repeatAnimation() {
     setInterval(function () {
         var loadingBage = document.getElementById("loading_page");
-        loadingBage.classList.remove("animate__rubberBand");
-        void loadingBage.offsetWidth; // Trigger reflow to restart animation
-        loadingBage.classList.add("animate__rubberBand");
+        
+        if (loadingBage !== null) {
+            loadingBage.classList.remove("animate__rubberBand");
+            void loadingBage.offsetWidth; // Trigger reflow to restart animation
+            loadingBage.classList.toggle("animate__rubberBand");
+        }
     }, 900); // Repeat every 3 seconds
 }
 
 document.addEventListener('DOMContentLoaded', function() {
     var modal = document.getElementById("videoModal");
-    var playButton = document.getElementById("play-button");
+    var playButton = document.getElementById("play_button");
     var closeButton = document.getElementById("close-button");
 
     playButton.onclick = function() {
@@ -58,4 +67,19 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.style.display = "none";
         }
     }
+});
+
+
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
 });

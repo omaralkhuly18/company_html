@@ -11,3 +11,22 @@ span.phone_topbar {
 a.dropdown-item {
     text-align: start;
 }
+
+#scroll{
+    left: 10px;
+    right: auto !important;
+}
+
+#play_button{
+    transform: translate(-69px, 11%) !important;
+}
+
+i.fa-solid.fa-play{
+    margin-right: 7%;
+    margin-left: auto !important;
+}
+
+.position_section_2{
+    right: 51%;
+    left: auto !important;
+}
