@@ -17,13 +17,15 @@ a.dropdown-item {
     right: auto !important;
 }
 
-#play_button{
-    transform: translate(-69px, 11%) !important;
+.play-button{
+    left: 45%;
 }
 
-i.fa-solid.fa-play{
-    margin-right: 7%;
-    margin-left: auto !important;
+@media screen and (max-width: 700px) and (min-width: 230px) {
+
+    .play-button h3{
+        justify-content: center;
+    }
 }
 
 .position_section_2{
