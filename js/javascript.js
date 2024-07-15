@@ -83,3 +83,16 @@ $(document).ready(function(){
         return false; 
     }); 
 });
+
+
+document.querySelectorAll('.form-control').forEach(input => {
+    input.addEventListener('focus', function () {
+        this.nextElementSibling.classList.add('active');
+    });
+
+    input.addEventListener('blur', function () {
+        if (this.value === '') {
+            this.nextElementSibling.classList.remove('active');
+        }
+    });
+});

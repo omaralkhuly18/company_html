@@ -32,3 +32,13 @@ a.dropdown-item {
     right: 51%;
     left: auto !important;
 }
+
+.position_image {
+    left: 35px;
+    right: auto !important;
+}
+
+.form-group label{
+    right: 30px;
+    left: auto !important;
+}
