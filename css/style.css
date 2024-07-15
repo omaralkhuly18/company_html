@@ -757,7 +757,7 @@
         }
 
         .inner_fun_fact {
-            background-color: #313131;
+            background-color: #31313136;
             margin-left: 5%;
             margin-bottom: 5%;
         }
@@ -783,6 +783,7 @@
             width: 100%;
             height: 490px;
             background-color: rgba(0, 0, 0, 0.267);
+           
         }
 
         .video-thumbnail img {
