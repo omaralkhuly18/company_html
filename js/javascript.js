@@ -53,13 +53,23 @@ document.addEventListener('DOMContentLoaded', function() {
     var modal = document.getElementById("videoModal");
     var playButton = document.getElementById("play_button");
     var closeButton = document.getElementById("close-button");
+    var navBarNone = document.getElementById("header");
+    var scrollButtons = document.getElementById("scroll");
+    const outlineSection = document.getElementById("outline_section");
 
     playButton.onclick = function() {
         modal.style.display = "block";
+        outlineSection.style.overflow = "hidden";
+        navBarNone.style.display = "none";
+        scrollButtons.style.zIndex = "0";
+
     }
 
     closeButton.onclick = function() {
         modal.style.display = "none";
+        outlineSection.style.overflow = "auto";
+        navBarNone.style.display = "block";
+        scrollButtons.style.zIndex = "3000";
     }
 
     window.onclick = function(event) {
@@ -70,18 +80,20 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-$(document).ready(function(){ 
-    $(window).scroll(function(){ 
-        if ($(this).scrollTop() > 100) { 
-            $('#scroll').fadeIn(); 
-        } else { 
-            $('#scroll').fadeOut(); 
-        } 
-    }); 
-    $('#scroll').click(function(){ 
-        $("html, body").animate({ scrollTop: 0 }, 600); 
-        return false; 
-    }); 
+document.addEventListener('DOMContentLoaded', function() {
+    var scrollButton = document.getElementById('scroll');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 100) {
+            scrollButton.style.display = 'block';
+        } else {
+            scrollButton.style.display = 'none';
+        }
+    });
+
+    scrollButton.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 });
 
 
