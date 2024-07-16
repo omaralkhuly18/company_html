@@ -1,72 +1,146 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document-test</title>
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      font-family: Arial, sans-serif;
     }
 
-    .video-section,
-    .fun-fact-section {
-      padding: 20px;
-      margin: 20px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      background-color: #f9f9f9;
+    body {
+
+      height: 100vh;
+      background-color: #f2f2f2;
     }
 
-    .video-section {
-      background-color: #e9f7ff;
-      position: relative;
-      margin-top: 7%;
-      z-index: 1;
-      padding: 1% 15%;
+    .container {
+      text-align: center;
     }
 
-    .fun-fact-section {
-      background-color: #fffae9;
-      position: absolute;
-      width: 95%;
-      margin-top: -8%;
+    .row_one,
+    .row_two {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
     }
 
-    h2 {
-      margin-top: 0;
+    .service-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s, background-color 0.3s;
+      width: 200px;
+      cursor: pointer;
     }
 
-    video {
+    .service-card img {
       width: 100%;
-      height: auto;
-      border-radius: 8px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      background-color: #ffcc00;
+    }
+
+    .service-title {
+      padding: 15px;
+      font-size: 1.1em;
+    }
+
+    #toggle-lang {
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #toggle-lang:hover {
+      background-color: #0056b3;
+    }
+
+    /* Right-to-left styles */
+    body.rtl {
+      direction: rtl;
     }
   </style>
 </head>
 
 <body>
-
-  <div class="tajawal_medium video-section">
-    <h2>Video Section</h2>
-    <video controls>
-      <source src="your-video-file.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+  <div class="container">
+    <div class="services">
+      <div class="crad_server_one">
+        <div class="row_one">
+          <div class="service-card">
+            <img src="image/welcome_about(2).jpg" alt="Service 1">
+            <h3 class="service-title" data-en="Web Development" data-ar="تطوير الويب">Web Development</h3>
+          </div>
+          <div class="service-card">
+            <img src="image/welcome_about(2).jpg" alt="Service 2">
+            <h3 class="service-title" data-en="App Development" data-ar="تطوير التطبيقات">App Development</h3>
+          </div>
+          <div class="service-card">
+            <img src="image/welcome_about(2).jpg" alt="Service 3">
+            <h3 class="service-title" data-en="SEO Optimization" data-ar="تحسين محركات البحث">SEO Optimization</h3>
+          </div>
+          <div class="service-card">
+            <img src="image/welcome_about(2).jpg" alt="Service 3">
+            <h3 class="service-title" data-en="SEO Optimization" data-ar=" نظام أمني ">
+              Digital Marketing</h3>
+          </div>
+        </div>
+      </div>
+      <div class="card_server_tow">
+        <div class="row_two">
+          <div class="service-card">
+            <img src="image/welcome_about(2).jpg" alt="Service 4">
+            <h3 class="service-title" data-en="Data Analysis" data-ar="تحليل البيانات">Data Analysis</h3>
+          </div>
+          <div class="service-card">
+            <img src="image/welcome_about(2).jpg" alt="Service 5">
+            <h3 class="service-title" data-en="Digital Marketing" data-ar="التسويق الرقمي">Digital Marketing</h3>
+          </div>
+          <div class="service-card">
+            <img src="image/welcome_about(2).jpg" alt="Service 6">
+            <h3 class="service-title" data-en="UI/UX Design" data-ar="تصميم واجهة المستخدم وتجربة المستخدم">UI/UX Design
+            </h3>
+          </div>
+          <div class="service-card">
+            <img src="image/welcome_about(2).jpg" alt="Service 6">
+            <h3 class="service-title" data-en="UI/UX Design" data-ar=" صياغة المنتج  ">Security System
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <script>
+    const toggleLanguage = () => {
+      const body = document.body;
+      const isEnglish = body.lang === "en";
+      body.lang = isEnglish ? "ar" : "en";
+      body.classList.toggle("rtl", !isEnglish);
 
-  <div class="tajawal_medium fun-fact-section">
-    <h2>Fun Fact Section</h2>
-    <p>Here are some fun facts:</p>
-    <ul>
-      <li>Fun fact 1</li>
-      <li>Fun fact 2</li>
-      <li>Fun fact 3</li>
-    </ul>
-  </div>
+      document.getElementById("toggle-lang").textContent = isEnglish ? "EN" : "AR";
+
+      document.querySelectorAll('.service-title').forEach(title => {
+        title.textContent = isEnglish ? title.getAttribute('data-ar') : title.getAttribute('data-en');
+      });
+    };
+  </script>
 
 </body>
 
