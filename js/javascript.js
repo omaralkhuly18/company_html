@@ -57,19 +57,22 @@ document.addEventListener('DOMContentLoaded', function() {
     var scrollButtons = document.getElementById("scroll");
     const outlineSection = document.getElementById("outline_section");
 
-    playButton.onclick = function() {
-        modal.style.display = "block";
-        outlineSection.style.overflow = "hidden";
-        navBarNone.style.display = "none";
-        scrollButtons.style.zIndex = "0";
-
+    if( playButton !== null ){
+        playButton.onclick = function() {
+            modal.style.display = "block";
+            outlineSection.style.overflow = "hidden";
+            navBarNone.style.display = "none";
+            scrollButtons.style.zIndex = "0";
+        }
     }
 
-    closeButton.onclick = function() {
-        modal.style.display = "none";
-        outlineSection.style.overflow = "auto";
-        navBarNone.style.display = "block";
-        scrollButtons.style.zIndex = "3000";
+    if(closeButton !== null){
+        closeButton.onclick = function() {
+            modal.style.display = "none";
+            outlineSection.style.overflow = "auto";
+            navBarNone.style.display = "block";
+            scrollButtons.style.zIndex = "3000";
+        }
     }
 
     window.onclick = function(event) {

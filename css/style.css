@@ -1216,7 +1216,7 @@ img.background-image {
 }
 
 @media screen and (max-width: 770px) and (min-width: 230px) {
-    .text_addrees_server {
+    .text_addrees {
         font-size: 65px;
     }
 }
@@ -1358,6 +1358,14 @@ img.background-image {
         width: 100%;
         box-shadow: 0 0 4px 3px yellow;
     }
+}
+
+section.googleMaps {
+    width: 100%;
+}
+
+section.googleMaps iframe {
+    width: 100%;
 }
 
 /* style server&contact page */
