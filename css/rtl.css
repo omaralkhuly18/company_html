@@ -42,3 +42,8 @@ a.dropdown-item {
     right: 30px;
     left: auto !important;
 }
+
+.custom-sidebar{
+    padding-left: 5% !important;
+    padding-right: 0% !important;
+}

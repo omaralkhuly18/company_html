@@ -1,147 +1,59 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ar">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Form</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-
-      height: 100vh;
-      background-color: #f2f2f2;
-    }
-
-    .container {
-      text-align: center;
-    }
-
-    .row_one,
-    .row_two {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .service-card {
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: transform 0.3s, background-color 0.3s;
-      width: 200px;
-      cursor: pointer;
-    }
-
-    .service-card img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-    }
-
-    .service-card:hover {
-      transform: translateY(-10px);
-      background-color: #ffcc00;
-    }
-
-    .service-title {
-      padding: 15px;
-      font-size: 1.1em;
-    }
-
-    #toggle-lang {
-      margin-bottom: 20px;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    #toggle-lang:hover {
-      background-color: #0056b3;
-    }
-
-    /* Right-to-left styles */
-    body.rtl {
-      direction: rtl;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام فاتورة</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="services">
-      <div class="crad_server_one">
-        <div class="row_one">
-          <div class="service-card">
-            <img src="image/welcome_about(2).jpg" alt="Service 1">
-            <h3 class="service-title" data-en="Web Development" data-ar="تطوير الويب">Web Development</h3>
-          </div>
-          <div class="service-card">
-            <img src="image/welcome_about(2).jpg" alt="Service 2">
-            <h3 class="service-title" data-en="App Development" data-ar="تطوير التطبيقات">App Development</h3>
-          </div>
-          <div class="service-card">
-            <img src="image/welcome_about(2).jpg" alt="Service 3">
-            <h3 class="service-title" data-en="SEO Optimization" data-ar="تحسين محركات البحث">SEO Optimization</h3>
-          </div>
-          <div class="service-card">
-            <img src="image/welcome_about(2).jpg" alt="Service 3">
-            <h3 class="service-title" data-en="SEO Optimization" data-ar=" نظام أمني ">
-              Digital Marketing</h3>
-          </div>
+    <div class="container">
+        <h1>فاتورة الكشف الطبي</h1>
+        <form id="invoice-form">
+            <div class="form-group">
+                <label for="patient-name" style="direction:r ;">اسم المريض</label>
+                <input type="text" id="patient-name" required>
+            </div>
+            <div class="form-group">
+                <label for="appointment-date">ميعاد الكشف</label>
+                <input type="datetime-local" id="appointment-date" required>
+            </div>
+            <div class="form-group">
+                <label for="appointment-price">سعر الكشف</label>
+                <input type="number" id="appointment-price" required>
+            </div>
+            <div class="form-group">
+                <label for="doctor-name">اسم الدكتور</label>
+                <input type="text" id="doctor-name" required>
+            </div>
+            <button type="button" onclick="generateInvoice()">إصدار الفاتورة</button>
+        </form>
+        <div id="invoice" class="invoice">
+            <h2>تفاصيل الفاتورة</h2>
+            <p><strong>اسم المريض:</strong> <span id="invoice-patient-name"></span></p>
+            <p><strong>ميعاد الكشف:</strong> <span id="invoice-appointment-date"></span></p>
+            <p><strong>سعر الكشف:</strong> <span id="invoice-appointment-price"></span></p>
+            <p><strong>اسم الدكتور:</strong> <span id="invoice-doctor-name"></span></p>
         </div>
-      </div>
-      <div class="card_server_tow">
-        <div class="row_two">
-          <div class="service-card">
-            <img src="image/welcome_about(2).jpg" alt="Service 4">
-            <h3 class="service-title" data-en="Data Analysis" data-ar="تحليل البيانات">Data Analysis</h3>
-          </div>
-          <div class="service-card">
-            <img src="image/welcome_about(2).jpg" alt="Service 5">
-            <h3 class="service-title" data-en="Digital Marketing" data-ar="التسويق الرقمي">Digital Marketing</h3>
-          </div>
-          <div class="service-card">
-            <img src="image/welcome_about(2).jpg" alt="Service 6">
-            <h3 class="service-title" data-en="UI/UX Design" data-ar="تصميم واجهة المستخدم وتجربة المستخدم">UI/UX Design
-            </h3>
-          </div>
-          <div class="service-card">
-            <img src="image/welcome_about(2).jpg" alt="Service 6">
-            <h3 class="service-title" data-en="UI/UX Design" data-ar=" صياغة المنتج  ">Security System
-            </h3>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  <script>
-    const toggleLanguage = () => {
-      const body = document.body;
-      const isEnglish = body.lang === "en";
-      body.lang = isEnglish ? "ar" : "en";
-      body.classList.toggle("rtl", !isEnglish);
+    <script>
+        function generateInvoice() {
+            const fields = ['patient-name', 'appointment-date', 'appointment-price', 'doctor-name'];
+            const invoiceFields = ['invoice-patient-name', 'invoice-appointment-date', 'invoice-appointment-price', 'invoice-doctor-name'];
+            const suffixes = ['', ' جنيه'];
 
-      document.getElementById("toggle-lang").textContent = isEnglish ? "EN" : "AR";
+            for (let i = 0; i < fields.length; i++) {
+                const value = document.getElementById(fields[i]).value;
+                if (!value) return alert('يرجى ملء جميع الحقول');
+                document.getElementById(invoiceFields[i]).innerText = i == 1 ? new Date(value).toLocaleString('ar-EG') : value + (i == 2 ? suffixes[1] : '');
+            }
 
-      document.querySelectorAll('.service-title').forEach(title => {
-        title.textContent = isEnglish ? title.getAttribute('data-ar') : title.getAttribute('data-en');
-      });
-    };
-  </script>
+            document.getElementById('invoice').style.display = 'block';
+        }
 
+    </script>
 </body>
 
 </html>

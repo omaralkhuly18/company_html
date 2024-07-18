@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+    <title>Custom Service AR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+        media="all">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rtl.css">
+    <link href="css/bootstrap-touch-slider.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/style_slider_3_cards.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body id="outline_section" dir="rtl">
+    <div id="loading-screen">
+        <div id="loading_page" class="tajawal_medium animate__animated animate__rubberBand">
+            <img src="image/logo_dark.png" alt="Comapny">
+        </div>
+    </div>
+    <!-- شريط الاتصال العلوي -->
+    <div class="tajawal_medium d-flex" style="background-color: #002f4b; color: white;">
+        <div class="tajawal_medium container_tag  d-flex justify-content-between">
+            <div class="tajawal_medium d-flex coniction_style">
+                <div class="tajawal_medium  ms-3 display_block">
+                    <i class=" fas fa-phone-alt me-1" style="color: #ff6600;"></i>
+                    <span class="tajawal_medium phone_topbar"> إدارة المصانع: 01289535000 </span>
+                </div>
+                <div class="tajawal_medium ms-3 display_none">
+                    <i class=" fas fa-phone-alt me-1" style="color: #ff6600;"></i>
+                    <span class="tajawal_medium phone_topbar"> إدارة المبيعات: 01289535000 </span>
+                </div>
+                <div class="tajawal_medium ms-3 ms-3 display_none">
+                    <i class=" fas fa-phone-alt me-1" style="color: #ff6600;"></i>
+                    <span class="tajawal_medium phone_topbar"> الهاتف الثابت: 0237607887 </span>
+                </div>
+            </div>
+            <div class="tajawal_medium d-flex align-items-center bg-orange conictionLink_style px-3 py-2">
+                <a href="contact_ar.html" class="tajawal_medium text-white">
+                    التواصل
+                </a>
+                <i class=" fas fa-arrow-left ms-2 text-white"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- شريط التنقل -->
+    <nav class="tajawal_medium navbar" id="header">
+        <div class="tajawal_medium container-fluid">
+            <a class="tajawal_medium navbar-brand header_opend" href="index.html">
+                <img src="image/logo_width.png" alt="Comapny">
+            </a>
+            <ul class="tajawal_medium navbar-nav d-flex justify-content-end flex-grow-1 pe-3 nav_item_responsive">
+                <li class="tajawal_medium nav-item">
+                    <a class="tajawal_medium nav-link active" aria-current="page" href="index.html"> الرئيسية </a>
+                </li>
+                <li class="tajawal_medium nav-item dropdown">
+                    <a class="tajawal_medium nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        الصفحات
+                    </a>
+                    <ul class="tajawal_medium dropdown-menu">
+                        <li><a class="tajawal_medium dropdown-item" href="#"> حول </a></li>
+                        <li><a class="tajawal_medium dropdown-item" href="#"> أعضاء الفريق </a></li>
+                        <li><a class="tajawal_medium dropdown-item" href="#"> الآراء </a></li>
+                        <li><a class="tajawal_medium dropdown-item" href="#"> الأسعار </a></li>
+                        <li><a class="tajawal_medium dropdown-item" href="#"> FAQ </a></li>
+                        <li><a class="tajawal_medium dropdown-item" href="#"> الصفحه المتخصه 1 </a></li>
+                        <li><a class="tajawal_medium dropdown-item" href="#"> الصفحه المتخصه 2 </a></li>
+                    </ul>
+                </li>
+                <li class="tajawal_medium nav-item">
+                    <a class="tajawal_medium nav-link" href="server_ar.html"> خدمات </a>
+                </li>
+                <li class="tajawal_medium nav-item ">
+                    <a class="tajawal_medium nav-link " aria-current="page" href="#"> منتجات </a>
+                </li>
+                <li class="tajawal_medium nav-item ">
+                    <a class="tajawal_medium nav-link" href="#"> الصفحه الشخصيه </a>
+                </li>
+                <li class="tajawal_medium nav-item ">
+                    <a class="tajawal_medium nav-link" aria-current="page" href="#"> مدونه </a>
+                </li>
+                <li class="tajawal_medium nav-item ">
+                    <a class="tajawal_medium nav-link" href="customService_en.html"> الإنجليزية </a>
+                </li>
+                <li class="tajawal_medium nav-item ">
+                    <a class="tajawal_medium nav-link" href="contact_ar.html"> التواصل </a>
+                </li>
+            </ul>
+            <button class="tajawal_medium navbar-toggler d-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="tajawal_medium navbar-toggler-icon">
+                    <i class=" fa-solid fa-bars" id="toggler-icon"></i>
+                </span>
+            </button>
+            <div class="tajawal_medium offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="tajawal_medium offcanvas-header">
+                    <a class="tajawal_medium navbar-brand sidebar_opend" href="index.html">
+                        <img src="image/logo_dark.png" alt="Comapny">
+                    </a>
+                    <button type="button" class="tajawal_medium btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="tajawal_medium offcanvas-body">
+                    <ul class="tajawal_medium navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="tajawal_medium nav-item">
+                            <a class="tajawal_medium nav-link active" aria-current="page" href="index.html"> الرئيسية
+                            </a>
+                        </li>
+                        <li class="tajawal_medium nav-item dropdown">
+                            <a class="tajawal_medium nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                الصفحات
+                            </a>
+                            <ul class="tajawal_medium dropdown-menu">
+                                <li><a class="tajawal_medium dropdown-item" href="#"> حول </a></li>
+                                <li><a class="tajawal_medium dropdown-item" href="#"> أعضاء الفريق </a></li>
+                                <li><a class="tajawal_medium dropdown-item" href="#"> الآراء </a></li>
+                                <li><a class="tajawal_medium dropdown-item" href="#"> الأسعار </a></li>
+                                <li><a class="tajawal_medium dropdown-item" href="#"> FAQ </a></li>
+                                <li><a class="tajawal_medium dropdown-item" href="#"> الصفحه المتخصه 1 </a></li>
+                                <li><a class="tajawal_medium dropdown-item" href="#"> الصفحه المتخصه 2 </a></li>
+                            </ul>
+                        </li>
+                        <li class="tajawal_medium nav-item">
+                            <a class="tajawal_medium nav-link" href="server_ar.html"> خدمات </a>
+                        </li>
+                        <li class="tajawal_medium nav-item ">
+                            <a class="tajawal_medium nav-link" aria-current="page" href="#"> منتجات </a>
+                        </li>
+                        <li class="tajawal_medium nav-item ">
+                            <a class="tajawal_medium nav-link" href="#"> الصفحه الشخصيه </a>
+                        </li>
+                        <li class="tajawal_medium nav-item ">
+                            <a class="tajawal_medium nav-link" aria-current="page" href="#"> مدونه </a>
+                        </li>
+                        <li class="tajawal_medium nav-item ">
+                            <a class="tajawal_medium nav-link" href="customService_en.html"> الإنجليزية </a>
+                        </li>
+                        <li class="tajawal_medium nav-item ">
+                            <a class="tajawal_medium nav-link" href="contact_ar.html"> التواصل </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section contact_section">
+        <div class="auto-container">
+            <div class="title-outer">
+                <h1 class="tajawal_extrabold text_addrees">
+                    تفاصيل خدمتنا
+                </h1>
+                <div class="text_bg">
+                    <a href="index.html" class="tajawal_light link_item"> الرئيسيه </a>
+                    <div>ـــــ</div>
+                    <p class="tajawal_light text_bg_pages">
+                        تفاصيل خدمتنا
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_tabs_details">
+        <div class="container-fluid style_fluid_new">
+            <div class="row">
+                <div class="col-md-4 custom-sidebar">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link button_tabs_inside tajawal_extrabold active" id="v-pills-home-tab"
+                            data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
+                            aria-controls="v-pills-home" aria-selected="true">
+                            تطوير الويب </button>
+                        <button class="nav-link button_tabs_inside tajawal_extrabold" id="v-pills-profile-tab"
+                            data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab"
+                            aria-controls="v-pills-profile" aria-selected="false">
+                            تحسين محركات البحث </button>
+                        <button class="nav-link button_tabs_inside tajawal_extrabold" id="v-pills-messages-tab"
+                            data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab"
+                            aria-controls="v-pills-messages" aria-selected="false">
+                            تطوير التطبيقات </button>
+                        <button class="nav-link button_tabs_inside tajawal_extrabold" id="v-pills-settings-tab"
+                            data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab"
+                            aria-controls="v-pills-settings" aria-selected="false">
+                            تحليل البيانات </button>
+                        <button class="nav-link button_tabs_inside tajawal_extrabold" id="v-pills-5-tab"
+                            data-bs-toggle="pill" data-bs-target="#v-pills-5" type="button" role="tab"
+                            aria-controls="v-pills-5" aria-selected="false">نظام أمني</button>
+                        <button class="nav-link button_tabs_inside tajawal_extrabold" id="v-pills-6-tab"
+                            data-bs-toggle="pill" data-bs-target="#v-pills-6" type="button" role="tab"
+                            aria-controls="v-pills-6" aria-selected="false">تصميم واجهة
+                            المستخدم/تجربة المستخدم</button>
+                        <button class="nav-link button_tabs_inside tajawal_extrabold" id="v-pills-7-tab"
+                            data-bs-toggle="pill" data-bs-target="#v-pills-7" type="button" role="tab"
+                            aria-controls="v-pills-7" aria-selected="false">
+                            التسويق الرقمي </button>
+                        <button class="nav-link button_tabs_inside tajawal_extrabold" id="v-pills-8-tab"
+                            data-bs-toggle="pill" data-bs-target="#v-pills-8" type="button" role="tab"
+                            aria-controls="v-pills-8" aria-selected="false">
+                            صيانة المنتج </button>
+                    </div>
+                    <div class="tajawal_light contact-info mt-4">
+                        <div class="service_details_help">
+                            <div class=" tajawal_light help-shape-1"></div>
+                            <div class=" tajawal_light help-shape-2"></div>
+                            <h2 class=" tajawal_light help-title">
+                                تواصل معنا لأي نصيحة
+                            </h2>
+                            <div class=" tajawal_light help-icon">
+                                <a href="contact_ar.html" class="span_help_icon"><i class="fas fa-phone"></i></a>
+                            </div>
+                            <div class=" tajawal_light help-contact">
+                                <p>
+                                    هل تحتاج مساعده؟ كلم خبير
+                                </p>
+                                <a href="tel:+1 (660) 831-0044">4400-138 (066) 1+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-button mt-4">
+                        <a href="path/to/your/file.pdf" class="btn btn-block download-button">
+                            قم بتنزيل الملف </a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <h3 class="tajawal_black">
+                                تطوير الويب
+                            </h3>
+                            <p class="tajawal_extrabold">
+                                في عصر يعتبر موقع الويب الخاص بك غالبًا أول تفاعل يتمتع به العميل المحتمل مع علامتك
+                                التجارية، فإن فريقنا المتخصص من المطورين ملتزم بإنشاء مواقع الويب التي تترك انطباعًا
+                                دائمًا. نحن ندرك أن كل عمل يعتبر فريدًا. خدمات تطوير مواقع الويب الخاصة بنا قابلة
+                                للتخصيص بشكل كبير، مما يضمن أن موقع الويب الخاص بك يتوافق مع هوية العلامة التجارية
+                                الخاصة بك، وأهدافك، واحتياجات جمهورك المستهدف الخاصة. سواء كنت بحاجة إلى موقع شركة أنيق،
+                                أو معرض جذاب، أو منصة تجارة إلكترونية قوية، لدينا الخبرة لتحويل رؤيتك إلى واقع. في عالم
+                                يتمحور حول الأجهزة المحمولة، التصميم الاستجابي لا يُمكن التفاوض فيه. يتم تصميم مواقعنا
+                                للتكيف بسلاسة مع مختلف الأجهزة وأحجام الشاشة، مما يوفر للمستخدمين تجربة متسقة ومحسّنة،
+                                سواء كانوا يستخدمون موقعك على سطح المكتب، أو الجهاز اللوحي، أو الهاتف الذكي. تجربة
+                                المستخدم هي في قلب فلسفة تطوير مواقع الويب لدينا. نحن نولي أولوية للتنقل البديهي،
+                                والواجهات المشوّقة، وصفحات التحميل السريع لضمان أن الزوار لا يتركون موقعك فحسب، بل
+                                يمتلكون تجربة إيجابية وذاكرة تشجع على الزيارات المتكررة والتحويلات. بالنسبة للشركات التي
+                                تخوض عالم التجارة الإلكترونية، تتضمن خدمات تطوير مواقع الويب الخاصة بنا إنشاء منصات تسوق
+                                عبر الإنترنت قوية وآمنة. من إدارة فهرس المنتجات إلى عمليات الدفع السلسة، نقوم ببناء حلول
+                                التجارة الإلكترونية التي تعزز رضا المستخدم وتحفز المبيعات. تمكن نفسك بالتحكم في محتوى
+                                موقع الويب الخاص بك. استخدامنا لأنظمة إدارة المحتوى المتقدمة يضمن أنه يمكنك بسهولة تحديث
+                                وتحرير وإدارة محتوى موقع الويب الخاص بك بدون الحاجة إلى خبرة تقنية، مما يوفر لك المرونة
+                                والاستقلالية.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
+                            <h3 class="tajawal_black">
+                                تحسين محركات البحث
+                            </h3>
+                            <p class="tajawal_extrabold">
+                                في عالم حيث الوجود على الإنترنت يشير إلى النجاح، فإن فريقنا من خبراء تحسين محركات البحث
+                                (SEO) مكرس لتموضع عملك في مقدمة نتائج محركات البحث. يبدأ عملية تحسين SEO لدينا بإجراء
+                                بحث شامل عن الكلمات الرئيسية. نحدد الكلمات الرئيسية الأكثر صلة والأكثر أداءً في صناعتك
+                                لوضع استراتيجية مخصصة. تضمن هذه النهج الاستراتيجي أن يتصدر موقعك على الويب قوائم البحث
+                                للمصطلحات التي تهم جمهورك المستهدف بشكل رئيسي. نحن نحسن كل جانب من جوانب موقع الويب
+                                الخاص بك ليتماشى مع خوارزميات محركات البحث. من العلامات الوصفية والرؤوس إلى المحتوى
+                                وعناصر الوسائط المتعددة، تقنيات التحسين في الموقع تعزز الصلة العامة وسهولة الوصول إلى
+                                صفحات الويب الخاصة بك. المحتوى هو العنصر الأساسي في المشهد الرقمي. تشمل خدماتنا في SEO
+                                إنشاء محتوى عالي الجودة وجذاب وملائم لا يمت إلى جمهورك فحسب ولكن يجذب أيضًا خوارزميات
+                                محركات البحث، مما يسهم في تحسين التصنيفات ومشاركة المستخدمين. تأسيس موقع الويب الخاص بك
+                                كسلطة في صناعتك أمر حاسم لنجاح SEO. تتضمن استراتيجيات بناء الروابط وتحسين المواقع
+                                الخارجية إنشاء روابط ذات جودة وتعزيز الوجود عبر الإنترنت، مما يعزز مصداقية موقعك في نظر
+                                محركات البحث. نقوم بإجراء فحوصات تقنية شاملة لـ SEO لتحديد ومعالجة أي مشكلات تحتية قد
+                                تؤثر على أداء موقع الويب الخاص بك في نتائج البحث. يتضمن ذلك تحسين سرعة الموقع، وتحسين
+                                الاستجابة على الهواتف المحمولة، ومعالجة أي عوائق تقنية تؤثر على الزحف والفهرسة في محركات
+                                البحث.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
+                            <h3 class="tajawal_black">
+                                تطوير التطبيقات
+                            </h3>
+                            <p class="tajawal_extrabold">
+                                تصور تطبيقك أمر أساسي. يتضمن عملية تطوير التطبيق لدينا إنشاء نماذج تفاعلية وتصاميم
+                                مفصلة. هذا ليس فقط يمنحك معاينة ملموسة للمنتج النهائي ولكنه يسمح أيضًا بالحصول على تغذية
+                                راجعة من المستخدمين، مما يضمن أن التصميم يتماشى مع رؤيتك وتوقعات المستخدمين. سواء كان
+                                التطوير لمنصة iOS أو Android أو تطوير متعدد المنصات، فإن خبرتنا تمتد عبر منصات متنوعة.
+                                نحن نضمن أن توفر التطبيق تجربة مستخدم متسقة وسلسة عبر أجهزة وأنظمة تشغيل مختلفة، مما
+                                يعزز نطاق وتأثير تطبيقك. التنويع هو في صلب عملية تطويرنا. نتبع منهجية رشيقة، تعزز
+                                التعاون والمرونة والتقدم التدريجي. تتيح لنا هذه النهجية التكيف مع التغييرات بكفاءة،
+                                والاستجابة للتغذية الراجعة بسرعة، وتقديم تطبيقات عالية الجودة ضمن الجداول الزمنية
+                                الواقعية. وراء كل تطبيق رائع يكمن البنية الأساسية القوية. يضمن مطورونا أن البنية الخلفية
+                                لتطبيقك ليست فقط وظيفية ولكن أيضًا قابلة للتوسيع وآمنة. تدعم هذه الأساسية تشغيل التطبيق
+                                بسلاسة وتتسع لنمو المستقبل.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                            aria-labelledby="v-pills-settings-tab">
+                            <h3 class="tajawal_black">
+                                تحليل البيانات
+                            </h3>
+                            <p class="tajawal_extrabold">
+                                في عصر المعلومات، جعل القرارات القائمة على البيانات ضرورة تنافسية. فريقنا المتخصص من
+                                المحللين هنا لمساعدتك في عملية تحويل البيانات الخام إلى رؤى قابلة للتنفيذ. يبدأ عملنا
+                                بجمع وتكامل دقيق للبيانات ذات الصلة من مصادر متعددة. سواء كانت تفاعلات العملاء أو
+                                اتجاهات السوق أو المقاييس التشغيلية، نضمن أن مجموعة بيانات شاملة ودقيقة تشكل أساس
+                                تحليلنا. نستخدم تقنيات تحليلية متقدمة لاكتشاف الأنماط والاتجاهات والترابطات داخل
+                                بياناتك. من الإحصائيات الوصفية إلى النمذجة التنبؤية، هدفنا هو تزويدك بفهم أعمق لمنظومة
+                                عملك، مما يمكنك من التخطيط الاستراتيجي والتنبؤ بالمستقبل. تصور البيانات أمر أساسي للفهم.
+                                نقوم بتصميم لوحات تحكم مخصصة تقدم المعلومات المعقدة بطريقة سهلة الاستخدام. تسمح هذه
+                                اللوحات التفاعلية لك بمراقبة المقاييس الرئيسية وتتبع الأداء واستخلاص الرؤى بنظرة واحدة.
+                                خبرتنا في النمذجة الإحصائية تمكننا من الذهاب إلى ما وراء الملاحظات على مستوى السطح. سواء
+                                كان الأمر يتعلق بالتنبؤ بالاتجاهات المستقبلية، أو تحديد القيم الشاذة، أو إجراء الاختبار
+                                A/B، نستخدم الطرق الإحصائية لاستخراج معلومات ذات مغزى وقابلة للتنفيذ. الهدف النهائي
+                                لخدماتنا في تحليل البيانات هو تمكينك من دعم القرارات. نقدم توصيات واضحة وموجزة وقابلة
+                                للتنفيذ استنادًا إلى نتائجنا، مما يضمن أن تتخذ قرارات مستنيرة تتماشى مع أهداف عملك.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
+                            <h3 class="tajawal_black">
+                                نظام أمني
+                            </h3>
+                            <p class="tajawal_extrabold">
+                                خدمات نظام الأمان الخاصة بنا مصممة لتلبية الاحتياجات الفريدة للعملاء السكنيين
+                                والتجاريين، مما يوفر دفاعًا قويًا ضد التهديدات المحتملة. في قلب عروضنا التزام بالاستفادة
+                                من أحدث التقنيات لضمان الحد الأقصى من الأمان. تتميز أنظمة المراقبة لدينا بأحدث التقنيات
+                                في مجال الكاميرات، مما يوفر التقاط فيديو عالي الجودة ومراقبة فورية في الوقت الحقيقي.
+                                سواء كنت بحاجة إلى مراقبة منزلك أو مكتبك أو مرافقك الصناعية، توفر حلولنا للمراقبة عينًا
+                                يقظة على مدار الساعة. تحكم الوصول هو جزء حاسم من أي استراتيجية أمنية، وتم تصميم أنظمتنا
+                                لإدارة وتقييد الوصول بكفاءة. من خلال إجراءات التحكم في الوصول المتقدمة، نضمن أن يكون
+                                الوصول إلى المناطق المحددة مقتصرًا فقط على الأفراد المرخص لهم، مما يعزز الأمان العام
+                                ويقلل من مخاطر الوصول غير المصرح به. أنظمة الإنذار الخاصة بنا مصممة وفقًا لاحتياجاتك
+                                الأمنية المحددة، مما ينبهك إلى التهديدات المحتملة أو الحالات الطارئة. باستخدام مؤثرات
+                                مخصصة، مثل اكتشاف الحركة، أو الوصول غير المصرح به، أو إنذارات الحريق، يمكنك أن تطمئن إلى
+                                أن أنظمة الأمان الخاصة بنا توفر استجابة نشطة للحفاظ عليك وعلى ممتلكاتك بأمان.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-6-tab">
+                            <h3 class="tajawal_black">
+                                تصميم واجهة المستخدم/تجربة المستخدم
+                            </h3>
+                            <p class="tajawal_extrabold">
+                                فريقنا المتخصص من المصممين يجمع بين الإبداع والوظائف لصناعة واجهات جذابة بصريًا وسهلة
+                                الاستخدام تجذب وتشد انتباه جمهورك. تصميم واجهة المستخدم (UI) يركز على الجوانب الجمالية
+                                والبصرية لمنصاتك الرقمية. نختار بعناية الألوان والأنماط الطباعية والصور لإنشاء واجهة
+                                جذابة بصريًا تعكس هوية علامتك التجارية. الهدف هو إنشاء انطباع أول لا يُنسى يتفاعل مع
+                                جمهورك. تصميم تجربة المستخدم (UX) هو في صميم خدمتنا، مضمونة أن كل تفاعل مع أصولك الرقمية
+                                يكون سلسًا وممتعًا. نعطي الأولوية للبحث عن المستخدم والاختبار لفهم احتياجات جمهورك
+                                وتفضيلاته وسلوكياته. توجيهات هذه البيانات إلى إنشاء تصميمات بديهية وموجهة نحو المستخدم
+                                تعزز الرضا العام. في عصر يقوم فيه المستخدمون بالوصول إلى المحتوى الرقمي عبر أجهزة
+                                مختلفة، تكون تصميماتنا متجاوبة بشكل طبيعي. سواء كان على سطح المكتب أو الجهاز اللوحي أو
+                                الهاتف المحمول، سيشعر جمهورك بتجارب واجهة متسقة ومحسنة، مما يعزز التوفر ورضا المستخدم.
+                                قبل التنفيذ، نقوم بإنشاء نماذج تفاعلية تتيح لك تجربة التصميم بشكل مباشر. هذه العملية
+                                التكرارية تضمن أن المنتج النهائي يلبي توقعاتك وتوفر فرصة للتغذية الراجعة والتحسين. نحن
+                                نؤمن بالتعاون ونقدر مدخلاتك طوال عملية التصميم. تصميماتنا، مع خبرتنا، تنتج تصميمات لا
+                                تلبي فقط المعايير الجمالية ولكن تتوافق أيضًا مع أهداف عملك وتوقعات المستخدم.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-7" role="tabpanel" aria-labelledby="v-pills-7-tab">
+                            <h3 class="tajawal_black">
+                                التسويق الرقمي
+                            </h3>
+                            <p class="tajawal_extrabold">
+                                في عصر يشكل فيه المنظر الرقمي عبر الإنترنت نجاح الأعمال، تتفانى وكالتنا في توجيهك خلال
+                                الميدان الرقمي نيابة عنك. تتميز خدمات التسويق الرقمي الشاملة التي نقدمها بتصميمها لزيادة
+                                رؤية العلامة التجارية الخاصة بك، والمشاركة، وتحويلات العملاء. تبدأ رحلتنا في التسويق
+                                الرقمي بالتخطيط الاستراتيجي. نحلل أهداف عملك، وجمهورك المستهدف، والمشهد الصناعي لخلق
+                                استراتيجيات مخصصة تتماشى مع أهدافك. يضع هذا التخطيط الدقيق الأساس لحملات رقمية ذات تأثير
+                                كبير. زيادة رؤيتك على محركات البحث باستخدام خبرتنا في الـ SEO. نقوم بتنفيذ استراتيجيات
+                                التحسين المدعومة بالبيانات لتحسين تصنيف موقعك على الويب، وزيادة حركة المرور العضوية،
+                                وتعزيز وجودك على الإنترنت، مما يضمن أن علامتك التجارية سهلة الاكتشاف من قبل جمهورك
+                                المستهدف. استغلال الوصول الأقصى وجلب حركة مستهدفة مع حلولنا للإعلانات على الإنترنت. من
+                                إعلانات Google إلى منصات التواصل الاجتماعي، نقوم بصياغة حملات إعلانية مقنعة تصل بكفاءة
+                                إلى جمهورك، مما يضمن أن رسالة علامتك الجارية هي في المقدمة عندما يكون الأمر مهمًا وأينما
+                                كان. استغلال قوة وسائل التواصل الاجتماعي مع خدماتنا للتسويق عبر وسائل التواصل الاجتماعي.
+                                نقوم بإنشاء محتوى جذاب ويمكن مشاركته، وتشغيل حملات إعلانية مستهدفة، وتعزيز التفاعلات
+                                المعنوية لبناء مجتمع قوي على الإنترنت حول علامتك التجارية، مما يدفع بالولاء والتحويلات
+                                للعلامة التجارية. المحتوى هو الملك، وخدماتنا في التسويق بالمحتوى تضمن أن سرد علامتك
+                                التجارية ليس فقط جذابًا ولكنه أيضًا يتردد لدى جمهورك. من المقالات إلى الفيديوهات، نقوم
+                                بإنشاء محتوى يضيف قيمة، ويؤسس لسلطتك، ويحفز التفاعل عبر منصات رقمية.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-8" role="tabpanel" aria-labelledby="v-pills-8-tab">
+                            <h3 class="tajawal_black">
+                                صيانة المنتج
+                            </h3>
+                            <p class="tajawal_extrabold">
+                                في ساحة محركة بالابتكار، يلتزم فريقنا المخصص بتوجيهك خلال رحلة تطوير المنتج بأكملها.
+                                نبدأ بفهم رؤيتك وأهدافك. يتضمن عملنا الفكري الاستراتيجي عمليات التفكير المشتركة والبحث
+                                السوقي وتحليل الجدوى لتشكيل مفاهيم تتماشى مع أهداف عملك وتلقي صدىً إيجابيًا من جمهورك
+                                المستهدف. بمجرد تثبيت المفهوم، ننتقل إلى مرحلة إنشاء النماذج الأولية والتصميم. يقوم
+                                فريقنا الخبير بإنشاء نماذج تفاعلية وخطط تصميم مفصلة، مما يتيح لك تصور المنتج واتخاذ
+                                قرارات مستنيرة قبل التوجه إلى مرحلة التطوير. منهجية تطويرنا السريعة تضمن المرونة
+                                والقابلية للتكيف طوال دورة حياة تطوير المنتج. نعطي الأولوية للتعاون والتقدم التدريجي
+                                والاستجابة السريعة للتغييرات، مما يضمن عملية تطوير سلسة وفعالة. يجلب فريقنا خبرات متنوعة
+                                إلى الطاولة، تغطي مجالات مثل التصميم والهندسة والتسويق وضمان الجودة. يضمن هذا النهج
+                                المتعدد التخصصات عملية تطوير شاملة، تتناول جميع الجوانب اللازمة لإطلاق منتج ناجح. قبل
+                                إطلاق منتجك، نجري التحقق السوقي الشامل. يتضمن ذلك اختبار النماذج الأولية وجمع ملاحظات
+                                المستخدمين وتحسين المنتج استنادًا إلى ردود الفعل الفعلية. يضمن التحقق السوقي أن يلبي
+                                منتجك توقعات المستخدمين ويبرز في السوق.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-section mt-4">
+                        <h4>
+                            أسئله مكرره
+                        </h4>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        السؤال الأول
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        إجابة السؤال الأول...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        السؤال الثاني
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        إجابة السؤال الثاني...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        السؤال الثالث
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        إجابة السؤال الثالث...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer>
+        <div class="tajawal_medium footer-container">
+            <div class="tajawal_medium footer-section about">
+                <img src="image/logo_dark.png" alt="Company Logo" class="tajawal_medium logo">
+                <p>
+                    وصف الشركة يذهب هنا. يمكن أن يحتوي هذا القسم على نبذة مختصرة عن الشركة وأعمالها
+                    خدمات.
+                </p>
+                <div class="tajawal_medium social-icons">
+                    <a href="#" class="tajawal_medium social-icon"><i class=" fab fa-facebook-f"></i></a>
+                    <a href="#" class="tajawal_medium social-icon"><i class=" fab fa-twitter"></i></a>
+                    <a href="#" class="tajawal_medium social-icon"><i class=" fab fa-instagram"></i></a>
+                    <a href="#" class="tajawal_medium social-icon"><i class=" fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="tajawal_medium footer-section links">
+                <h2>
+                    روابط سريعة
+                </h2>
+                <ul>
+                    <li><a href="index.html">
+                            الرئيسية
+                        </a></li>
+                    <li><a href="#">
+                            معلومات عنا
+                        </a></li>
+                    <li><a href="server_ar.html">
+                            خدمات
+                        </a></li>
+                    <li><a href="contact_ar.html">
+                            التواصل
+                        </a></li>
+                </ul>
+            </div>
+            <div class="tajawal_medium footer-section links">
+                <h2>
+                    موارد
+                </h2>
+                <ul>
+                    <li><a href="#">
+                            مدونة
+                        </a></li>
+                    <li><a href="#">
+                            التعليمات
+                        </a></li>
+                    <li><a href="#">
+                            يدعم
+                        </a></li>
+                    <li><a href="#">
+                            شروط الخدمة
+                        </a></li>
+                </ul>
+            </div>
+            <div class="tajawal_medium footer-section subscribe">
+                <h2>
+                    يشترك
+                </h2>
+                <form action="contact_ar.html">
+                    <input type="email" placeholder=" أدخل بريدك الإلكتروني " required>
+                    <button type="submit">
+                        يشترك
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="scroll"><span></span></a>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+    <script src="js/javascript.js"></script>
+    <!-- Bootstrap bootstrap-touch-slider Slider Main JS File -->
+    <script src="js/bootstrap-touch-slider.js"></script>
+    <script src="js/script_slider_3_crads.js"></script>
+
+    <script type="text/javascript">
+        $('#bootstrap-touch-slider').bsTouchSlider();
+    </script>
+</body>
+
+</html>
