@@ -1,143 +1,127 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Service Page</title>
+    <title>About Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <style>
-        .section_tabs_details .icon-card {
-            display: inline-block;
-            width: 100%;
-            text-align: center;
-            padding: 20px;
-            margin: 10px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: #f8f9fa;
-        }
-        .section_tabs_details .icon-card i {
-            font-size: 50px;
-            color: #FFA500;
-        }
-        .section_tabs_details .icon-card p {
-            margin-top: 10px;
-            font-size: 18px;
-        }
-        .section_tabs_details .download-button {
-            background-color: #FFA500;
-            color: #fff;
-        }
-        .section_tabs_details .download-button:hover {
-            background-color: #cc8400;
-            color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style_new.css">
 </head>
+
 <body>
-    <div class="container-fluid">
+    <div class="container my-5">
         <div class="row">
-            <div class="col-md-3 custom-sidebar">
-                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">تطوير الويب</button>
-                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">تحسين محركات البحث</button>
-                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">تطوير التطبيقات</button>
-                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">تحليل البيانات</button>
-                    <button class="nav-link" id="v-pills-5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-5" type="button" role="tab" aria-controls="v-pills-5" aria-selected="false">نظام أمني</button>
-                    <button class="nav-link" id="v-pills-6-tab" data-bs-toggle="pill" data-bs-target="#v-pills-6" type="button" role="tab" aria-controls="v-pills-6" aria-selected="false">تصميم واجهة المستخدم/تجربة المستخدم</button>
-                    <button class="nav-link" id="v-pills-7-tab" data-bs-toggle="pill" data-bs-target="#v-pills-7" type="button" role="tab" aria-controls="v-pills-7" aria-selected="false">التسويق الرقمي</button>
-                    <button class="nav-link" id="v-pills-8-tab" data-bs-toggle="pill" data-bs-target="#v-pills-8" type="button" role="tab" aria-controls="v-pills-8" aria-selected="false">صيانة المنتج</button>
-                </div>
-                <div class="contact-info mt-4">
-                    <div class="icon-card">
-                        <i class="fas fa-phone"></i>
-                        <p>تواصل معنا</p>
-                        <p class="mb-0"><strong>+1 (660) 831-0044</strong></p>
-                    </div>
-                </div>
-                <div class="download-button mt-4">
-                    <a href="path/to/your/file.pdf" class="btn btn-block download-button">قم بتنزيل الملف</a>
+            <div class="col-md-6">
+                <div class="images-container">
+                    <div class="work-experience">38+ Work Experience</div>
+                    <img src="image/welcome_about(1).jpg" alt="Main Image" class="image-main">
+                    <img src="image/welcome_about(2).jpg" alt="Overlay Image" class="image-overlay">
                 </div>
             </div>
-            <div class="col-md-9">
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                        <h3>تطوير الويب</h3>
-                        <p>نص عن تطوير الويب...</p>
+            <div class="col-md-6 text-section">
+                <h2>Get to Know Us</h2>
+                <h1>The best digital marketing solutions</h1>
+                <p>There are many variations of passages of available but the majority have suffered alteration in some form, by injected humour randomised words which don't look.</p>
+                <ul>
+                    <li><strong>Leading in marketing:</strong> Knowledge of technologies rules better than anyone which we apply in our daily work</li>
+                    <li><strong>Expert developers:</strong> Knowledge of technologies rules better than anyone which we apply in our daily work</li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <img src="image/team_member_4.jpg" alt="David Cooper" class="rounded-circle me-3" width="50">
+                    <div>
+                        <p>David Cooper</p>
+                        <small>CEO and Co-Founder</small>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                        <h3>تحسين محركات البحث</h3>
-                        <p>نص عن تحسين محركات البحث...</p>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                        <h3>تطوير التطبيقات</h3>
-                        <p>نص عن تطوير التطبيقات...</p>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                        <h3>تحليل البيانات</h3>
-                        <p>نص عن تحليل البيانات...</p>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
-                        <h3>نظام أمني</h3>
-                        <p>نص عن النظام الأمني...</p>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-6-tab">
-                        <h3>تصميم واجهة المستخدم/تجربة المستخدم</h3>
-                        <p>نص عن تصميم واجهة المستخدم...</p>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-7" role="tabpanel" aria-labelledby="v-pills-7-tab">
-                        <h3>التسويق الرقمي</h3>
-                        <p>نص عن التسويق الرقمي...</p>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-8" role="tabpanel" aria-labelledby="v-pills-8-tab">
-                        <h3>صيانة المنتج</h3>
-                        <p>نص عن صيانة المنتج...</p>
+                    <a href="#" class="btn btn-warning ms-3">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services Section -->
+    <section class="text-center bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="mb-4">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card service-card h-100">
+                        <img src="image/service_6.jpg" class="card-img-top" alt="Security System">
+                        <div class="card-body">
+                            <h5 class="card-title">Security System</h5>
+                            <p class="card-text">Ensure the safety of your business with our top-notch security
+                                solutions.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="faq-section mt-4">
-                    <h4>أسئلة مكررة</h4>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    السؤال الأول
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    إجابة السؤال الأول...
-                                </div>
-                            </div>
+                <div class="col-md-3">
+                    <div class="card service-card h-100">
+                        <img src="image/service_7.jpg" class="card-img-top" alt="Digital Marketing">
+                        <div class="card-body">
+                            <h5 class="card-title">Digital Marketing</h5>
+                            <p class="card-text">Reach a wider audience with our comprehensive digital marketing
+                                strategies.</p>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    السؤال الثاني
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    إجابة السؤال الثاني...
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card service-card h-100">
+                        <img src="image/service_6.jpg" class="card-img-top" alt="Product Crafting">
+                        <div class="card-body">
+                            <h5 class="card-title">Product Crafting</h5>
+                            <p class="card-text">Craft high-quality products tailored to your business needs.</p>
                         </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    السؤال الثالث
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    إجابة السؤال الثالث...
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card service-card h-100">
+                        <img src="image/service_1.jpg" class="card-img-top" alt="Web Development">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">Develop a strong online presence with our web development services.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="text-center my-5">
+        <div class="container">
+            <h2 class="mb-4">Meet our Team Members</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card team-card h-100">
+                        <img src="image/team_member_1.jpg" class="card-img-top" alt="Team Member">
+                        <div class="card-body">
+                            <h5 class="card-title">Mike Henderson</h5>
+                            <p class="card-text">Lead Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card team-card h-100">
+                        <img src="image/team_member_2.jpg" class="card-img-top" alt="Team Member">
+                        <div class="card-body">
+                            <h5 class="card-title">Kevin Martin</h5>
+                            <p class="card-text">Digital Marketing Specialist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card team-card h-100">
+                        <img src="image/team_member_3.jpg" class="card-img-top" alt="Team Member">
+                        <div class="card-body">
+                            <h5 class="card-title">Jason Clever</h5>
+                            <p class="card-text">Account Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

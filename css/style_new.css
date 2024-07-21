@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.work-experience {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ffc107;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.images-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+.image-main, .image-overlay {
+    width: 100%;
+    border-radius: 5px;
+}
+.image-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 50%;
+    border: 3px solid #fff;
+}
+.text-section {
+    padding: 20px;
+}
+
+.service-card,
+.team-card {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-card:hover,
+.team-card:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+.service-card .card-body,
+.team-card .card-body {
+    text-align: center;
+}
+
+.service-card .card-title,
+.team-card .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.service-card .card-text,
+.team-card .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}

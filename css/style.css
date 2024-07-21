@@ -18,7 +18,7 @@ li {
     list-style: none;
 }
 
-.dropdown-menu>li>a:hover{
+.dropdown-menu>li>a:hover {
     color: #262626 !important;
 }
 
@@ -234,7 +234,7 @@ li {
 .navbar {
     position: absolute;
     z-index: 100;
-    height: 110px;
+    height: 85px;
     width: 100%;
     background-color: #00000014;
 }
@@ -265,7 +265,7 @@ li {
 }
 
 .header_opend img {
-    width: 55%;
+    width: 60%;
     height: 100%;
 }
 
@@ -1170,7 +1170,7 @@ img.background-image {
 
 /* call us */
 
-/* style server&contact&detailsServices page */
+/* style server&aboutus&contact&detailsServices page */
 .hero-section {
     position: relative;
     display: flex;
@@ -1536,11 +1536,11 @@ section.googleMaps iframe {
     margin: 5% 0;
 }
 
-.style_fluid_new{
+.style_fluid_new {
     padding: 3% 5%;
 }
 
-.custom-sidebar{
+.custom-sidebar {
     padding-right: 5% !important;
     padding-left: 0% !important;
 }
@@ -1557,7 +1557,7 @@ section.googleMaps iframe {
     overflow: hidden;
 }
 
-.help-shape-1{
+.help-shape-1 {
     position: absolute;
     bottom: -100px;
     left: -95px;
@@ -1599,13 +1599,13 @@ section.googleMaps iframe {
     transition: 1s;
 }
 
-@media screen and (max-width: 770px) and (min-width: 230px){
-    .span_help_icon{
+@media screen and (max-width: 770px) and (min-width: 230px) {
+    .span_help_icon {
         width: 15% !important;
     }
 }
 
-.span_help_icon:hover{
+.span_help_icon:hover {
     background-color: rgba(0, 0, 0, 0.404);
 }
 
@@ -1624,21 +1624,50 @@ i.fas.fa-phone {
     color: white;
 }
 
-.help-contact a:hover{
+.help-contact a:hover {
     color: #d7936a;
 }
 
-.section_tabs_details .download-button {
-    background-color: #FFA500;
-    color: #fff;
+.download-button {
+    width: 85%;
+    height: 50px;
+    margin: 0 8%;
 }
 
-.section_tabs_details .download-button:hover {
-    background-color: #cc8400;
-    color: #fff;
+.download_button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: #002f4b !important;
+    color: white !important;
+    outline: none;
+    border: none;
+    position: relative;
+    z-index: 5;
 }
 
-.button_tabs_inside{
+.download_button::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    background-color: #ff6600 !important;
+    border-radius: 4px;
+    transition: 0.7s;
+    z-index: -1;
+}
+
+.download_button:hover::before {
+    width: 100%;
+}
+
+.button_tabs_inside {
     color: black !important;
     background-color: #f5faff;
     border-radius: 15px !important;
@@ -1646,9 +1675,99 @@ i.fas.fa-phone {
     box-shadow: 0 0 8px 0px #c6d8e9;
 }
 
-.button_tabs_inside.active{
+.button_tabs_inside.active {
     color: rgb(255, 255, 255) !important;
     background-color: #002f4b !important;
+}
+
+.accordion-button::after {
+    content: '\002B';
+    font-size: 18px;
+    background-image: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.accordion-button.collapsed::after {
+    content: '\2212';
+    font-size: 18px;
+    background-image: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.accordion-button {
+    background-color: #ff6600 !important;
+    color: white !important;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.accordion-button.collapsed {
+    background-color: #002f4b !important;
+    color: #fff !important;
+    font-size: 20px;
+}
+
+.accordion-button:focus {
+    border: 0.5px solid #002f4b !important;
+    box-shadow: #002f4b 0 0 6px 2px !important;
+}
+
+.work-experience {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ffc107;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.images-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+.image-main, .image-overlay {
+    width: 100%;
+    border-radius: 5px;
+}
+.image-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 50%;
+    border: 3px solid #fff;
+}
+.text-section {
+    padding: 20px;
+}
+
+.service-card,
+.team-card {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-card:hover,
+.team-card:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+.service-card .card-body,
+.team-card .card-body {
+    text-align: center;
+}
+
+.service-card .card-title,
+.team-card .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.service-card .card-text,
+.team-card .card-text {
+    font-size: 1rem;
+    color: #6c757d;
 }
 
 /* style server&contact page */

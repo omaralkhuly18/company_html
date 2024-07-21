@@ -111,3 +111,14 @@ document.querySelectorAll('.form-control').forEach(input => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var accordionButtons = document.querySelectorAll('.accordion-button');
+    
+    accordionButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        // يمكنك إضافة أي منطق إضافي هنا
+      });
+    });
+  });
+  

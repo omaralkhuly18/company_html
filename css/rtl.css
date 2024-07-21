@@ -47,3 +47,8 @@ a.dropdown-item {
     padding-left: 5% !important;
     padding-right: 0% !important;
 }
+
+.download_button::before{
+    left: auto !important;
+    right: 0;
+}
