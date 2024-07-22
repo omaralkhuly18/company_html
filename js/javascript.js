@@ -8,7 +8,7 @@ function scrollFunction() {
         togglerIcon.style.color = "white";
         navBar.style.top = "0";
     } else {
-        navBar.style.backgroundColor = "rgb(0 0 0 / 23%)";
+        navBar.style.backgroundColor = "#002f4b";
         togglerIcon.style.color = "#002f4b";
         navBar.style.top = "auto";
     }

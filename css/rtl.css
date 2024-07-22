@@ -52,3 +52,12 @@ a.dropdown-item {
     left: auto !important;
     right: 0;
 }
+
+.image-overlay {
+    left: auto !important;
+    right: -10%;
+}
+
+.inner_box_picture{
+    text-align: end;
+}
