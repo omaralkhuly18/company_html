@@ -17,118 +17,47 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>تفاصيل المنتج</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/style_new.css">
     </head>
 
     <body>
-        <div class="container">
-            <div class="tabs">
-                <button class="tab-link active"  data-tab="1" onclick="openTab(event, 'mobiles')">هواتف</button>
-                <button class="tab-link"  data-tab="2" onclick="openTab(event, 'home-appliances')">أجهزة منزلية</button>
-                <button class="tab-link"  data-tab="3" onclick="openTab(event, 'cars')">سيارات</button>
-            </div>
-
-            <div id="mobiles tab-1" class="tab-content" style="display: block;">
-                <div class="product-details">
-                    <img src="https://via.placeholder.com/300x300" alt="iPhone 14">
-                    <div class="product-info">
-                        <h2>iPhone 14</h2>
-                        <p>لوريب إيبسوم ليس مجرد نص عشوائي. لوريب إيبسوم ليس مجرد نص عشوائي. لوريب إيبسوم ليس مجرد نص
-                            عشوائي.</p>
-                        <p class="price-before">السعر: <span>91000</span></p>
-                        <p class="price-after">بعد الخصم: <span>90000</span></p>
-                        <p class="quantity">الكمية: 5</p>
-                        <button class="order-btn">طلب الآن</button>
-                    </div>
+        <div class="blog-posts">
+            <div class="post-card">
+                <img src="image/blog_post_1.jpg" alt="Blog Post Image">
+                <div class="post-info">
+                    <span class="date">30 Jun, 2023</span>
+                    <span class="author">by Admin</span>
+                    <h3>Social Media Success: Pro Strategies for You</h3>
+                    <a href="details.html?id=1" class="read-more">Read More</a>
                 </div>
             </div>
-
-            <div id="home-appliances tab-2" class="tab-content">
-                <div class="product-details">
-                    <img src="https://via.placeholder.com/300x300" alt="خلاط كهربائي">
-                    <div class="product-info">
-                        <h2>خلاط كهربائي</h2>
-                        <p>لوريب إيبسوم ليس مجرد نص عشوائي. لوريب إيبسوم ليس مجرد نص عشوائي. لوريب إيبسوم ليس مجرد نص
-                            عشوائي.</p>
-                        <p class="price-before">السعر: <span>2500</span></p>
-                        <p class="price-after">بعد الخصم: <span>2400</span></p>
-                        <p class="quantity">الكمية: 10</p>
-                        <button class="order-btn">طلب الآن</button>
-                    </div>
+            <div class="post-card">
+                <img src="image/blog_post_2.jpg" alt="Blog Post Image">
+                <div class="post-info">
+                    <span class="date">30 Jun, 2023</span>
+                    <span class="author">by Admin</span>
+                    <h3>Web Design Essentials for Optimal User Experience</h3>
+                    <a href="details.html?id=2" class="read-more">Read More</a>
                 </div>
             </div>
-
-            <div id="cars tab-3" class="tab-content">
-                <div class="product-details">
-                    <img src="https://via.placeholder.com/300x300" alt="سيارة">
-                    <div class="product-info">
-                        <h2>سيارة</h2>
-                        <p>لوريب إيبسوم ليس مجرد نص عشوائي. لوريب إيبسوم ليس مجرد نص عشوائي. لوريب إيبسوم ليس مجرد نص
-                            عشوائي.</p>
-                        <p class="price-before">السعر: <span>500000</span></p>
-                        <p class="quantity">الكمية: 10</p>
-                        <button class="order-btn">طلب الآن</button>
-                    </div>
+            <div class="post-card">
+                <img src="image/blog_post_3.jpg" alt="Blog Post Image">
+                <div class="post-info">
+                    <span class="date">30 Jun, 2023</span>
+                    <span class="author">by Admin</span>
+                    <h3>Digital Branding Mastery: Your Ultimate Guide</h3>
+                    <a href="details.html?id=3" class="read-more">Read More</a>
                 </div>
-            </div>
-
-            <div id="order-form" class="order-form" style="display: none;">
-                <h3>طلب المنتج</h3>
-                <form>
-                    <label for="name">الاسم:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="address">العنوان:</label>
-                    <input type="text" id="address" name="address" required>
-                    <label for="quantity">الكمية:</label>
-                    <input type="number" id="quantity" name="quantity" required>
-                    <button type="submit">إرسال الطلب</button>
-                    <button type="button" id="close-form">إغلاق</button>
-                </form>
             </div>
         </div>
 
-        <script src="script.js"></script>
     </body>
 
     </html>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-        function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-
-            tabcontent = document.getElementsByClassName("tab-content");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-
-            tablinks = document.getElementsByClassName("tab-link");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-        document.querySelectorAll('.order-btn').forEach(button => {
-            button.addEventListener('click', () => {
-                document.getElementById('order-form').style.display = 'block';
-            });
-        });
-
-        document.getElementById('close-form').addEventListener('click', () => {
-            document.getElementById('order-form').style.display = 'none';
-        });
-
-        // Default tab open
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelector('.tab-link').click();
-        });
-
-
-    </script>
+    <script src="js/java_try_test.js"></script>
 </body>
 
 </html>

@@ -216,7 +216,7 @@
                         </li>
                     </ul>
                 </div>
-                <form class="contact_form">
+                <form class="contact_form" action="index.html">
                     <p class="text_contact_form color_fixed_tow">
                         أرسل لنا البريد الإلكتروني
                     </p>
@@ -224,11 +224,11 @@
                         إذا كان لديك أي أسئلة، لا تتردد في إرسال رسالة لنا أدناه.
                     </h2>
                     <div class="input_group">
-                        <input type="text" id="full-name" placeholder=" الاسم الكامل ">
-                        <input type="email" id="email" placeholder=" بريد إلكتروني ">
+                        <input type="text" id="full-name" placeholder=" الاسم الكامل " required>
+                        <input type="email" id="email" placeholder=" بريد إلكتروني " required>
                     </div>
-                    <input type="text" id="subject" placeholder=" موضوع ">
-                    <textarea id="message" placeholder=" رسالة "></textarea>
+                    <input type="text" id="subject" placeholder=" موضوع " required>
+                    <textarea id="message" placeholder=" رسالة " required></textarea>
                     <button type="submit" id="submit-btn">
                         أرسل رسالة
                     </button>

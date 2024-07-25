@@ -79,3 +79,7 @@ a.dropdown-item {
 .icon_portfolio {
     transform: none;
 }
+
+.accordion-button{
+    text-align: justify;
+}

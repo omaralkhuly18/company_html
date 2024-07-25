@@ -125,11 +125,14 @@
                             <ul class="tajawal_medium dropdown-menu">
                                 <li><a class="tajawal_medium dropdown-item" href="about_en.html">About </a></li>
                                 <li><a class="tajawal_medium dropdown-item" href="team_en.html"> Team Members </a></li>
-                                <li><a class="tajawal_medium dropdown-item" href="testimonials_en.html">Testimonials </a></li>
+                                <li><a class="tajawal_medium dropdown-item" href="testimonials_en.html">Testimonials
+                                    </a></li>
                                 <li><a class="tajawal_medium dropdown-item" href="price_en.html">Pricing </a></li>
                                 <li><a class="tajawal_medium dropdown-item" href="faq_en.html">FAQ </a></li>
-                                <li><a class="tajawal_medium dropdown-item" href="customOne_en.html">Custom Page 1 </a></li>
-                                <li><a class="tajawal_medium dropdown-item" href="customTwo_en.html">Custom Page 2 </a></li>
+                                <li><a class="tajawal_medium dropdown-item" href="customOne_en.html">Custom Page 1 </a>
+                                </li>
+                                <li><a class="tajawal_medium dropdown-item" href="customTwo_en.html">Custom Page 2 </a>
+                                </li>
                             </ul>
                         </li>
                         <li class="tajawal_medium nav-item">
@@ -173,7 +176,7 @@
         </div>
     </section>
 
-        <section class="section_products_boxs">
+    <section class="section_products_boxs">
         <div class="product-grid">
             <div class="product-card">
                 <div class="content_image_product">
@@ -183,7 +186,7 @@
                 <p class="tajawal_light price-before"> price : <span>91000</span></p>
                 <p class="tajawal_light price-after"> After Discount : <span>90000</span></p>
                 <p class="tajawal_light quantity"> Amount: 5 </p>
-                <button class="tajawal_black about-us-btn"  data-id="1">page the product</button>
+                <button class="tajawal_black about-us-btn" data-id="1">page the product</button>
                 <button class="tajawal_black order-btn">to request now</button>
             </div>
             <div class="product-card">
@@ -194,7 +197,7 @@
                 <p class="tajawal_light price-before"> price : <span>2500</span></p>
                 <p class="tajawal_light price-after"> After Discount : <span>2400</span></p>
                 <p class="tajawal_light quantity"> Amount: 5 </p>
-                <button class="tajawal_black about-us-btn"  data-id="2">page the product</button>
+                <button class="tajawal_black about-us-btn" data-id="2">page the product</button>
                 <button class="tajawal_black order-btn">to request now</button>
             </div>
             <div class="product-card">
@@ -205,25 +208,36 @@
                 <p class="tajawal_light price-before"> price : <span>500000</span></p>
                 <p class="tajawal_light price-after"> After Discount : <span>400500</span></p>
                 <p class="tajawal_light quantity"> Amount: 5 </p>
-                <button class="tajawal_black about-us-btn"  data-id="3">page the product</button>
+                <button class="tajawal_black about-us-btn" data-id="3">page the product</button>
                 <button class="tajawal_black order-btn">to request now</button>
             </div>
         </div>
 
-        <div id="order-form" class="order-form" style="display: none;">
-            <h3 class="tajawal_blod">to request the product</h3>
-            <form>
-                <label class="tajawal_light" for="name">the name:</label>
-                <input  type="text" id="name" name="name" required>
-                <label class="tajawal_light" for="address">the address:</label>
-                <input type="text" id="address" name="address" required>
-                <label class="tajawal_light" for="quantity">Quantity:</label>
-                <input type="number" id="quantity" name="quantity" required>
-                <button class="tajawal_black mb-5" type="submit">send the demand</button>
-                <button class="tajawal_black" type="button" id="close-form">Close</button>
-            </form>
+        <div class="models_orders" id="order-form" style="display: none;">
+            <div class="order-form opject_model_order">
+                <h3 class="tajawal_blod">to request the product</h3>
+                <form id="orderForm">
+                    <label class="tajawal_light" for="name">the name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label class="tajawal_light" for="address">the address:</label>
+                    <input type="text" id="address" name="address" required>
+                    <label class="tajawal_light" for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" required>
+                    <button class="tajawal_black mb-5" id="send-demand" type="submit">send the demand</button>
+                    <button class="tajawal_black" type="button" id="close-form">Close</button>
+                </form>
+            </div>
         </div>
     </section>
+
+    <div id="notification" class="notification_products">
+        <div class="content_notificatian">
+            <span>
+                The request has been sent successfully
+            </span>
+            <div class="loader"></div>
+        </div>
+    </div>
 
     <!-- التذييل -->
     <footer>
@@ -269,7 +283,7 @@
 
     <a href="#" id="scroll"><span></span></a>
 
-        <script>
+    <script>
         document.querySelectorAll('.order-btn').forEach(button => {
             button.addEventListener('click', () => {
                 document.getElementById('order-form').style.display = 'block';

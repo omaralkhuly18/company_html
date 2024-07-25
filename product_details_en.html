@@ -186,7 +186,7 @@
 
             <div id="tab-1" class="tab-content">
                 <div class="product-details">
-                    <img src="image/slide1.jpg" alt="iPhone 14">
+                    <img src="image/product_1.png" alt="iPhone 14">
                     <div class="product-info">
                         <h2 class="tajawal_blod">iPhone 14</h2>
                         <p class="tajawal_black">
@@ -207,7 +207,7 @@
 
             <div id="tab-2" class="tab-content">
                 <div class="product-details">
-                    <img src="image/slide2.jpg" alt="خلاط كهربائي">
+                    <img src="image/product_2.jpg" alt="خلاط كهربائي">
                     <div class="product-info">
                         <h2 class="tajawal_blod">Blender electrical</h2>
                         <p class="tajawal_black">
@@ -227,7 +227,7 @@
 
             <div id="tab-3" class="tab-content">
                 <div class="product-details">
-                    <img src="image/slide3.jpg" alt="سيارة">
+                    <img src="image/product_3.jpg" alt="سيارة">
                     <div class="product-info">
                         <h2 class="tajawal_blod">car</h2>
                         <p class="tajawal_black">
@@ -247,19 +247,28 @@
 
             <div id="order-form" class="order-form" style="display: none;">
                 <h3 class="tajawal_blod">to request the product</h3>
-                <form>
+                <form id="orderForm">
                     <label class="tajawal_light" for="name">the name:</label>
                     <input type="text" id="name" name="name" required>
                     <label class="tajawal_light" for="address">the address:</label>
                     <input type="text" id="address" name="address" required>
                     <label class="tajawal_light" for="quantity">Quantity:</label>
                     <input type="number" id="quantity" name="quantity" required>
-                    <button type="submit" class="tajawal_black mb-5">send the demand</button>
+                    <button type="submit" class="tajawal_black mb-5" id="send-demand">send the demand</button>
                     <button type="button" class="tajawal_black" id="close-form">Close</button>
                 </form>
             </div>
         </div>
     </section>
+
+    <div id="notification" class="notification">
+        <div class="content_notificatian">
+            <span>
+                The request has been sent successfully
+            </span>
+            <div class="loader"></div>
+        </div>
+    </div>
 
     <!-- التذييل -->
     <footer>

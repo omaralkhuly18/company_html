@@ -130,3 +130,21 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+document.getElementById('orderForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // لمنع إعادة تحميل الصفحة عند إرسال النموذج
+    const notification = document.getElementById('notification');
+    notification.style.display = 'flex';
+    notification.style.justifyContent = 'center';
+    nameUser = document.getElementById("name");
+    addressUser = document.getElementById("address");
+    quantityUser = document.getElementById("quantity");
+    // إخفاء الإشعار بعد 3 ثوانٍ
+    setTimeout(function () {
+        notification.style.display = 'none';
+        document.getElementById('order-form').style.display = 'none';
+        nameUser.value="";
+        addressUser.value="";
+        quantityUser.value="";
+    }, 5000);
+});
