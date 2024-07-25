@@ -1,4 +1,4 @@
-.offcanvas.offcanvas-end{
+.offcanvas.offcanvas-end {
     right: 0 !important;
     left: auto !important;
     transform: translateX(100%) !important;
@@ -12,23 +12,23 @@ a.dropdown-item {
     text-align: start;
 }
 
-#scroll{
+#scroll {
     left: 10px;
     right: auto !important;
 }
 
-.play-button{
+.play-button {
     left: 45%;
 }
 
 @media screen and (max-width: 700px) and (min-width: 230px) {
 
-    .play-button h3{
+    .play-button h3 {
         justify-content: center;
     }
 }
 
-.position_section_2{
+.position_section_2 {
     right: 51%;
     left: auto !important;
 }
@@ -38,17 +38,17 @@ a.dropdown-item {
     right: auto !important;
 }
 
-.form-group label{
+.form-group label {
     right: 30px;
     left: auto !important;
 }
 
-.custom-sidebar{
+.custom-sidebar {
     padding-left: 5% !important;
     padding-right: 0% !important;
 }
 
-.download_button::before{
+.download_button::before {
     left: auto !important;
     right: 0;
 }
@@ -58,6 +58,24 @@ a.dropdown-item {
     right: -10%;
 }
 
-.inner_box_picture{
+.inner_box_picture {
     text-align: end;
+}
+
+.content_boxs_portfolio {
+    left: auto;
+    right: 20px;
+}
+
+.content_boxs_portfolio::before{
+    left: -35px;
+}
+
+.inner_boxs_portfolio:hover .content_boxs_portfolio {
+    left: auto;
+    right: 0;
+}
+
+.icon_portfolio {
+    transform: none;
 }

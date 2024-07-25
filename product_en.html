@@ -155,6 +155,76 @@
             </div>
         </div>
     </nav>
+
+    <section class="hero-section contact_section">
+        <div class="auto-container">
+            <div class="title-outer">
+                <h1 class="tajawal_extrabold text_addrees">
+                    Product
+                </h1>
+                <div class="text_bg">
+                    <a href="index.html" class="tajawal_light link_item"> Home </a>
+                    <div>ـــــ</div>
+                    <p class="tajawal_light text_bg_pages">
+                        Product
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="section_products_boxs">
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="content_image_product">
+                    <img class="images_products1" src="image/product_1.png" alt="iPhone 14">
+                </div>
+                <h3 class="tajawal_blod">iPhone 14</h3>
+                <p class="tajawal_light price-before"> price : <span>91000</span></p>
+                <p class="tajawal_light price-after"> After Discount : <span>90000</span></p>
+                <p class="tajawal_light quantity"> Amount: 5 </p>
+                <button class="tajawal_black about-us-btn"  data-id="1">page the product</button>
+                <button class="tajawal_black order-btn">to request now</button>
+            </div>
+            <div class="product-card">
+                <div class="content_image_product">
+                    <img class="images_products2" src="image/product_2.jpg" alt="خلاط كهربائي">
+                </div>
+                <h3 class="tajawal_blod">Blender electrical</h3>
+                <p class="tajawal_light price-before"> price : <span>2500</span></p>
+                <p class="tajawal_light price-after"> After Discount : <span>2400</span></p>
+                <p class="tajawal_light quantity"> Amount: 5 </p>
+                <button class="tajawal_black about-us-btn"  data-id="2">page the product</button>
+                <button class="tajawal_black order-btn">to request now</button>
+            </div>
+            <div class="product-card">
+                <div class="content_image_product">
+                    <img class="images_products3" src="image/product_3.jpg" alt="احتراف التسويق الرقمي">
+                </div>
+                <h3 class="tajawal_blod"> cars </h3>
+                <p class="tajawal_light price-before"> price : <span>500000</span></p>
+                <p class="tajawal_light price-after"> After Discount : <span>400500</span></p>
+                <p class="tajawal_light quantity"> Amount: 5 </p>
+                <button class="tajawal_black about-us-btn"  data-id="3">page the product</button>
+                <button class="tajawal_black order-btn">to request now</button>
+            </div>
+        </div>
+
+        <div id="order-form" class="order-form" style="display: none;">
+            <h3 class="tajawal_blod">to request the product</h3>
+            <form>
+                <label class="tajawal_light" for="name">the name:</label>
+                <input  type="text" id="name" name="name" required>
+                <label class="tajawal_light" for="address">the address:</label>
+                <input type="text" id="address" name="address" required>
+                <label class="tajawal_light" for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required>
+                <button class="tajawal_black mb-5" type="submit">send the demand</button>
+                <button class="tajawal_black" type="button" id="close-form">Close</button>
+            </form>
+        </div>
+    </section>
+
     <!-- التذييل -->
     <footer>
         <div class="tajawal_medium footer-container">
@@ -198,6 +268,26 @@
     </footer>
 
     <a href="#" id="scroll"><span></span></a>
+
+        <script>
+        document.querySelectorAll('.order-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                document.getElementById('order-form').style.display = 'block';
+            });
+        });
+
+        document.getElementById('close-form').addEventListener('click', () => {
+            document.getElementById('order-form').style.display = 'none';
+        });
+
+        document.querySelectorAll('.about-us-btn').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const productId = event.target.getAttribute('data-id');
+                window.location.href = `product_details_en.html?id=${productId}`;
+            });
+        });
+    </script>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

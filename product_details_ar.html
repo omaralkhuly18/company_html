@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
-    <title>Terms of Service AR</title>
+    <title>Detailes Product AR</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -92,7 +92,7 @@
                     <a class="tajawal_medium nav-link" aria-current="page" href="blog_ar.html"> مدونه </a>
                 </li>
                 <li class="tajawal_medium nav-item ">
-                    <a class="tajawal_medium nav-link" href="term_en.html"> الإنجليزية </a>
+                    <a class="tajawal_medium nav-link" href="product_details_en.html"> الإنجليزية </a>
                 </li>
                 <li class="tajawal_medium nav-item ">
                     <a class="tajawal_medium nav-link" href="contact_ar.html"> التواصل </a>
@@ -130,8 +130,10 @@
                                 <li><a class="tajawal_medium dropdown-item" href="testimonials_ar"> الآراء </a></li>
                                 <li><a class="tajawal_medium dropdown-item" href="price_ar.html"> الأسعار </a></li>
                                 <li><a class="tajawal_medium dropdown-item" href="faq_ar.html"> FAQ </a></li>
-                                <li><a class="tajawal_medium dropdown-item" href="customOne_ar"> الصفحه المتخصه 1 </a></li>
-                                <li><a class="tajawal_medium dropdown-item" href="customTwo_ar"> الصفحه المتخصه 2 </a></li>
+                                <li><a class="tajawal_medium dropdown-item" href="customOne_ar"> الصفحه المتخصه 1 </a>
+                                </li>
+                                <li><a class="tajawal_medium dropdown-item" href="customTwo_ar"> الصفحه المتخصه 2 </a>
+                                </li>
                             </ul>
                         </li>
                         <li class="tajawal_medium nav-item">
@@ -147,7 +149,7 @@
                             <a class="tajawal_medium nav-link" aria-current="page" href="blog_ar"> مدونه </a>
                         </li>
                         <li class="tajawal_medium nav-item ">
-                            <a class="tajawal_medium nav-link" href="term_en.html"> الإنجليزية </a>
+                            <a class="tajawal_medium nav-link" href="product_details_en.html"> الإنجليزية </a>
                         </li>
                         <li class="tajawal_medium nav-item ">
                             <a class="tajawal_medium nav-link" href="contact_ar.html"> التواصل </a>
@@ -157,6 +159,100 @@
             </div>
         </div>
     </nav>
+
+    <section class="hero-section contact_section">
+        <div class="auto-container">
+            <div class="title-outer">
+                <h1 class="tajawal_extrabold text_addrees">
+                    تفاصيل المنتج
+                </h1>
+                <div class="text_bg">
+                    <a href="index.html" class="tajawal_light link_item"> الرئيسيه </a>
+                    <div>ـــــ</div>
+                    <p class="tajawal_light text_bg_pages">
+                        تفاصيل المنتج
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_product_details">
+        <div class="container">
+            <div class="tabs">
+                <button class="tajawal_black tab-link" data-tab="1" onclick="openTab(event, '1')">هواتف</button>
+                <button class="tajawal_black tab-link" data-tab="2" onclick="openTab(event, '2')">أجهزة منزلية</button>
+                <button class="tajawal_black tab-link" data-tab="3" onclick="openTab(event, '3')">سيارات</button>
+            </div>
+
+            <div id="tab-1" class="tab-content">
+                <div class="product-details">
+                    <img src="image/slide1.jpg" alt="iPhone 14">
+                    <div class="product-info">
+                        <h2 class="tajawal_blod">iPhone 14</h2>
+                        <p class="tajawal_black">
+                            يتميز iPhone 14 بشاشة OLED رائعة بحجم 6.1 بوصة ومعالج A15 Bionic القوي. الكاميرا الخلفية
+                            بدقة 12 ميجابكسل تتيح التقاط صور مذهلة في مختلف ظروف الإضاءة، بينما توفر الكاميرا الأمامية
+                            صور سيلفي عالية الجودة. يأتي ببطارية تدوم طوال اليوم ويدعم الشحن السريع والشحن اللاسلكي.
+                        </p>
+                        <p class="tajawal_light price-before">السعر: <span>91000</span></p>
+                        <p class="tajawal_light price-after">بعد الخصم: <span>90000</span></p>
+                        <p class="tajawal_light quantity">الكمية: 5</p>
+                        <button class="tajawal_black order-btn">طلب الآن</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-2" class="tab-content">
+                <div class="product-details">
+                    <img src="image/slide2.jpg" alt="خلاط كهربائي">
+                    <div class="product-info">
+                        <h2 class="tajawal_blod">خلاط كهربائي</h2>
+                        <p class="tajawal_black">
+                            خلاط كهربائي عالي الأداء مزود بمحرك قوي وسرعات متعددة لتحضير العصائر والخلطات والعجائن. يأتي
+                            بوعاء زجاجي بسعة 1.5 لتر وشفرات فولاذية مقاومة للصدأ لضمان المتانة والأداء الفائق. يتميز
+                            بتصميم أنيق ومقبض مريح للاستخدام اليومي.
+                        </p>
+                        <p class="tajawal_light price-before">السعر: <span>2500</span></p>
+                        <p class="tajawal_light price-after">بعد الخصم: <span>2400</span></p>
+                        <p class="tajawal_light quantity">الكمية: 10</p>
+                        <button class="tajawal_black order-btn">طلب الآن</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-3" class="tab-content">
+                <div class="product-details">
+                    <img src="image/slide3.jpg" alt="سيارة">
+                    <div class="product-info">
+                        <h2 class="tajawal_blod">سيارة</h2>
+                        <p class="tajawal_black">
+                            سيارة رياضية فاخرة تجمع بين الأداء العالي والتصميم الأنيق. مزودة بمحرك V8 قوي يوفر تسارعًا
+                            مذهلاً وتحكمًا دقيقًا. تحتوي على مقاعد جلدية فاخرة ونظام ترفيهي متطور مع شاشة لمس كبيرة.
+                            تضمن نظام السلامة المتقدم تجربة قيادة آمنة ومريحة.
+                        </p>
+                        <p class="tajawal_light price-before">السعر: <span>500000</span></p>
+                        <p class="tajawal_light quantity">الكمية: 10</p>
+                        <button class="tajawal_black order-btn">طلب الآن</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="order-form" class="order-form" style="display: none;">
+                <h3 class="tajawal_blod">طلب المنتج</h3>
+                <form>
+                    <label class="tajawal_light" for="name">الاسم:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label class="tajawal_light" for="address">العنوان:</label>
+                    <input type="text" id="address" name="address" required>
+                    <label class="tajawal_light" for="tajawal_light quantity">الكمية:</label>
+                    <input type="number" id="tajawal_light quantity" name="quantity" required>
+                    <button class="tajawal_black mb-5" type="submit">إرسال الطلب</button>
+                    <button class="tajawal_black" type="button" id="close-form">إغلاق</button>
+                </form>
+            </div>
+        </div>
+    </section>
     <!-- التذييل -->
     <footer>
         <div class="tajawal_medium footer-container">
@@ -226,7 +322,51 @@
     </footer>
 
     <a href="#" id="scroll"><span></span></a>
+    <script>
+        function getQueryParam(param) {
+            let urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
 
+        function openTab(event, tabId) {
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            var tabElement = document.getElementById(`tab-${tabId}`);
+            if (tabElement) {
+                tabElement.style.display = "block";
+                event.currentTarget.className += " active";
+            }
+        }
+
+        // عند تحميل الصفحة، فتح التاب المناسب بناءً على معرف المنتج
+        document.addEventListener('DOMContentLoaded', () => {
+            const productId = getQueryParam('id');
+            if (productId) {
+                openTab(null, productId);
+            }
+        });
+
+        document.querySelectorAll('.order-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                document.getElementById('order-form').style.display = 'block';
+            });
+        });
+
+        document.getElementById('close-form').addEventListener('click', () => {
+            document.getElementById('order-form').style.display = 'none';
+        });
+
+    </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

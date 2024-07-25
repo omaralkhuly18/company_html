@@ -128,10 +128,12 @@
                                 <li><a class="tajawal_medium dropdown-item" href="about_ar"> حول </a></li>
                                 <li><a class="tajawal_medium dropdown-item" href="team_ar"> أعضاء الفريق </a></li>
                                 <li><a class="tajawal_medium dropdown-item" href="testimonials_ar"> الآراء </a></li>
-                                <li><a class="tajawal_medium dropdown-item" href="price_ar"> الأسعار </a></li>
-                                <li><a class="tajawal_medium dropdown-item" href="faq_ar"> FAQ </a></li>
-                                <li><a class="tajawal_medium dropdown-item" href="customOne_ar"> الصفحه المتخصه 1 </a></li>
-                                <li><a class="tajawal_medium dropdown-item" href="customTwo_ar"> الصفحه المتخصه 2 </a></li>
+                                <li><a class="tajawal_medium dropdown-item" href="price_ar.html"> الأسعار </a></li>
+                                <li><a class="tajawal_medium dropdown-item" href="faq_ar.html"> FAQ </a></li>
+                                <li><a class="tajawal_medium dropdown-item" href="customOne_ar"> الصفحه المتخصه 1 </a>
+                                </li>
+                                <li><a class="tajawal_medium dropdown-item" href="customTwo_ar"> الصفحه المتخصه 2 </a>
+                                </li>
                             </ul>
                         </li>
                         <li class="tajawal_medium nav-item">
@@ -157,6 +159,76 @@
             </div>
         </div>
     </nav>
+
+    <section class="hero-section contact_section">
+        <div class="auto-container">
+            <div class="title-outer">
+                <h1 class="tajawal_extrabold text_addrees">
+                    المنتجات
+                </h1>
+                <div class="text_bg">
+                    <a href="index.html" class="tajawal_light link_item"> الرئيسيه </a>
+                    <div>ـــــ</div>
+                    <p class="tajawal_light text_bg_pages">
+                        المنتجات
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section_products_boxs">
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="content_image_product">
+                    <img class="images_products1" src="image/product_1.png" alt="iPhone 14">
+                </div>
+                <h3 class="tajawal_blod">iPhone 14</h3>
+                <p class="tajawal_light price-before">السعر: <span>91000</span></p>
+                <p class="tajawal_light price-after">بعد الخصم: <span>90000</span></p>
+                <p class="tajawal_light quantity">الكمية: 5</p>
+                <button class="tajawal_black about-us-btn"  data-id="1">صفحة المنتج</button>
+                <button class="tajawal_black order-btn">طلب الآن</button>
+            </div>
+            <div class="product-card">
+                <div class="content_image_product">
+                    <img class="images_products2" src="image/product_2.jpg" alt="خلاط كهربائي">
+                </div>
+                <h3 class="tajawal_blod">خلاط كهربائي</h3>
+                <p class="tajawal_light price-before">السعر: <span>2500</span></p>
+                <p class="tajawal_light price-after">بعد الخصم: <span>2400</span></p>
+                <p class="tajawal_light quantity">الكمية: 10</p>
+                <button class="tajawal_black about-us-btn"  data-id="2">صفحة المنتج</button>
+                <button class="tajawal_black order-btn">طلب الآن</button>
+            </div>
+            <div class="product-card">
+                <div class="content_image_product">
+                    <img class="images_products3" src="image/product_3.jpg" alt="احتراف التسويق الرقمي">
+                </div>
+                <h3 class="tajawal_blod"> سيارات </h3>
+                <p class="tajawal_light price-before">السعر: <span>500000</span></p>
+                <p class="tajawal_light quantity">الكمية: 10</p>
+                <button class="tajawal_black about-us-btn"  data-id="3">صفحة المنتج</button>
+                <button class="tajawal_black order-btn">طلب الآن</button>
+            </div>
+        </div>
+
+        <div id="order-form" class="order-form" style="display: none;">
+            <h3 class="tajawal_blod">طلب المنتج</h3>
+            <form>
+                <label class="tajawal_light" for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+                <label class="tajawal_light" for="address">العنوان:</label>
+                <input type="text" id="address" name="address" required>
+                <label class="tajawal_light" for="tajawal_light quantity">الكمية:</label>
+                <input type="number" id="tajawal_light quantity" name="quantity" required>
+                <button class="tajawal_black mb-5" type="submit">إرسال الطلب</button>
+                <button class="tajawal_black" type="button" id="close-form">إغلاق</button>
+            </form>
+        </div>
+    </section>
+
     <!-- التذييل -->
     <footer>
         <div class="tajawal_medium footer-container">
@@ -226,6 +298,25 @@
     </footer>
 
     <a href="#" id="scroll"><span></span></a>
+
+    <script>
+        document.querySelectorAll('.tajawal_black order-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                document.getElementById('order-form').style.display = 'block';
+            });
+        });
+
+        document.getElementById('close-form').addEventListener('click', () => {
+            document.getElementById('order-form').style.display = 'none';
+        });
+
+        document.querySelectorAll('.tajawal_black about-us-btn').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const productId = event.target.getAttribute('data-id');
+                window.location.href = `product_details_ar.html?id=${productId}`;
+            });
+        });
+    </script>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
