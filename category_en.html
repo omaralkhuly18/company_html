@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
-    <title>Blog Detailes EN</title>
+    <title>Category Detailes EN</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -91,7 +91,7 @@
                     <a class="tajawal_medium nav-link" aria-current="page" href="blog_en.html"> Blog </a>
                 </li>
                 <li class="tajawal_medium nav-item ">
-                    <a class="tajawal_medium nav-link" href="details_blog_ar.html"> Arabic </a>
+                    <a class="tajawal_medium nav-link" href="category_ar.html"> Arabic </a>
                 </li>
                 <li class="tajawal_medium nav-item ">
                     <a class="tajawal_medium nav-link" href="contact_en.html"> Contact </a>
@@ -148,7 +148,7 @@
                             <a class="tajawal_medium nav-link" aria-current="page" href="blog_en.html">Blog </a>
                         </li>
                         <li class="tajawal_medium nav-item ">
-                            <a class="tajawal_medium nav-link" href="details_blog_ar.html"> Arabic </a>
+                            <a class="tajawal_medium nav-link" href="category_ar.html"> Arabic </a>
                         </li>
                         <li class="tajawal_medium nav-item ">
                             <a class="tajawal_medium nav-link" href="contact_en.html">Contact </a>
@@ -163,60 +163,48 @@
         <div class="auto-container">
             <div class="title-outer">
                 <h1 class="tajawal_extrabold text_addrees">
-                    Blog Detailes
+                    Category Detailes
                 </h1>
                 <div class="text_bg">
                     <a href="home_en.html" class="tajawal_light link_item"> Home </a>
                     <div>ـــــ</div>
                     <p class="tajawal_light text_bg_pages">
-                        Blog Detailes
+                        Category Detailes
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section_detailes_blogs">
+    <section class="section_category_tabs">
         <div class="container-fluid">
-            <div class="container_Blogs">
-                <div class="Blog-details row">
-                    <div class="col-lg-4 col-md-6 col-sm-12 ">
-                        <div class="categories">
-                            <h2 class="tajawal_black">Categories</h2>
-                            <ul>
-                                <li><a href="category_en.html?category=business" class="tajawal_extrabold">Business</a>
-                                </li>
-                                <li><a href="category_en.html?category=digital-agency" class="tajawal_extrabold">Digital
-                                        Agency</a></li>
-                                <li><a href="category_en.html?category=technology" class="tajawal_extrabold">Technology</a>
-                                </li>
-                                <li><a href="category_en.html?category=web-design" class="tajawal_extrabold">Web Design</a>
-                                </li>
-                                <li><a href="category_en.html?category=web-development" class="tajawal_extrabold">Web
-                                        Development</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-6 col-sm-12">
-                        <div class="Blog-content">
-                            <img id="Blog_image" src="" alt="Project Image">
-                            <div class="Blog-info">
-                                <p id="Blog_date"></p>
-                                <p id="Blog_client"></p>
-                                <p id="Blog_description"></p>
-                                <p id="Blog_tags"></p>
-                            </div>
-                        </div>
-                        <div class="Blog-navigation">
-                            <button id="prev-button">Previous</button>
-                            <button id="next-button">Next</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+            <div id="content"></div>
         </div>
     </section>
+
+    <script>
+        function getQueryParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        const category = getQueryParameter('category');
+        const contentDiv = document.getElementById('content');
+
+        const content = {
+            'business': '<h3>Business</h3><p>Content for Business category...</p>',
+            'digital-agency': '<h3>Digital Agency</h3><p>Content for Digital Agency category...</p>',
+            'technology': '<h3>Technology</h3><p>Content for Technology category...</p>',
+            'web-design': '<h3>Web Design</h3><p>Content for Web Design category...</p>',
+            'web-development': '<h3>Web Development</h3><p>Content for Web Development category...</p>'
+        };
+
+        if (category && content[category]) {
+            contentDiv.innerHTML = content[category];
+        } else {
+            contentDiv.innerHTML = '<h3>Category not found</h3>';
+        }
+    </script>
 
     <!-- التذييل -->
     <footer>
@@ -261,75 +249,6 @@
     </footer>
 
     <a href="#" id="scroll"><span></span></a>
-    <script>
-        const blogs = [
-            {
-                date: '23 March, 2023',
-                client: 'Admin',
-                Tags: 'Web design , social , UI , UX',
-                description: 'Web Design Essentials for Optimal User Experience encompass key elements that ensure websites are not only visually appealing but also user-friendly, fast-loading, and compatible with various devices, thereby enhancing user interaction and satisfaction.',
-                image: 'image/slide1.jpg',
-                name: 'Web Design Essentials for Optimal User Experience'
-            },
-            {
-                date: '15 April, 2023',
-                client: 'Admin',
-                Tags: 'Web Design , Social , UI , Agency , Business',
-                description: 'Achieving social media success requires advanced professional strategies that include a deep understanding of the target audience, creating engaging and impactful content, utilizing analytics tools to monitor and continuously improve performance, along with active and ongoing interaction with followers to build strong relationships and enhance loyalty, ultimately leading to increased reach, influence, and sustainable growth.',
-                image: 'image/slide2.jpg',
-                name: 'Social Media Success: Pro Strategies for You'
-            },
-            {
-                date: '10 May, 2023',
-                client: 'Admin',
-                Tags: 'Web design , social , UI , Business , strategies',
-                description: 'Mastering digital branding requires a comprehensive and integrated approach that begins with developing a strong and distinctive brand identity reflecting the company values and vision, followed by consistent and effective content management across various digital channels, and leveraging advanced analytics tools to measure success and adapt to shifting market trends, ultimately contributing to building a prominent and established digital presence that enhances brand credibility and achieves business objectives.',
-                image: 'image/welcome_about(2).jpg',
-                name: 'Digital Branding Mastery: Your Ultimate Guide'
-            }
-        ];
-
-        let currentProjectIndex = 0;
-
-        document.getElementById('prev-button').addEventListener('click', () => {
-            if (currentProjectIndex > 0) {
-                currentProjectIndex--;
-                updateProjectDetails();
-            }
-        });
-
-        document.getElementById('next-button').addEventListener('click', () => {
-            if (currentProjectIndex < blogs.length - 1) {
-                currentProjectIndex++;
-                updateProjectDetails();
-            }
-        });
-
-        function updateProjectDetails() {
-            const blog = blogs[currentProjectIndex];
-            document.getElementById('Blog_date').innerHTML = `<span class="tajawal_black"> Date: </span> ${blog.date}`;
-            document.getElementById('Blog_client').innerHTML = `<span class="tajawal_black"> Client: </span> ${blog.client}`;
-            document.getElementById('Blog_tags').innerHTML = `<span class="style_span_privet tajawal_black"> Tags: <span/> ${blog.Tags}`;
-            document.getElementById('Blog_description').textContent = blog.description;
-            document.getElementById('Blog_image').src = blog.image;
-
-            const url = new URL(window.location);
-            url.searchParams.set('blog', blog.name);
-            window.history.pushState({}, '', url);
-        }
-
-        window.onload = () => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const projectName = urlParams.get('blog');
-            if (projectName) {
-                const projectIndex = blogs.findIndex(blog => blog.name === projectName);
-                if (projectIndex !== -1) {
-                    currentProjectIndex = projectIndex;
-                }
-            }
-            updateProjectDetails();
-        };
-    </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

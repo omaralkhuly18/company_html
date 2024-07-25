@@ -16,7 +16,6 @@ function scrollFunction() {
             togglerIcon.style.color = "#002f4b";
         }
     } else {
-        // Reset navbar styles when outside the specified screen width range
         navBar.style.backgroundColor = "#00000014";
         navBar.style.top = "auto";
     }
@@ -24,8 +23,8 @@ function scrollFunction() {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(hideLoadingScreen, 3000); // Simulate loading time
-    repeatAnimation(); // Start the repeated animation
+    setTimeout(hideLoadingScreen, 3000); 
+    repeatAnimation(); 
 });
 
 function hideLoadingScreen() {
@@ -52,10 +51,10 @@ function repeatAnimation() {
 
         if (loadingBage !== null) {
             loadingBage.classList.remove("animate__rubberBand");
-            void loadingBage.offsetWidth; // Trigger reflow to restart animation
+            void loadingBage.offsetWidth; 
             loadingBage.classList.toggle("animate__rubberBand");
         }
-    }, 900); // Repeat every 3 seconds
+    }, 900);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -126,25 +125,42 @@ document.addEventListener('DOMContentLoaded', function () {
 
     accordionButtons.forEach(function (button) {
         button.addEventListener('click', function () {
-            // يمكنك إضافة أي منطق إضافي هنا
         });
     });
 });
 
-document.getElementById('orderForm').addEventListener('submit', function (event) {
-    event.preventDefault(); // لمنع إعادة تحميل الصفحة عند إرسال النموذج
-    const notification = document.getElementById('notification');
-    notification.style.display = 'flex';
-    notification.style.justifyContent = 'center';
-    nameUser = document.getElementById("name");
-    addressUser = document.getElementById("address");
-    quantityUser = document.getElementById("quantity");
-    // إخفاء الإشعار بعد 3 ثوانٍ
-    setTimeout(function () {
-        notification.style.display = 'none';
-        document.getElementById('order-form').style.display = 'none';
-        nameUser.value="";
-        addressUser.value="";
-        quantityUser.value="";
-    }, 5000);
+document.addEventListener('DOMContentLoaded', function () {
+    const targetPages = [
+        '/product_ar.html',
+        '/product_en.html',
+        '/product_details_ar.html',
+        '/product_details_en.html'
+    ];
+
+    const currentPath = window.location.pathname;
+
+    if (targetPages.includes(currentPath)) {
+        const orderForm = document.getElementById('orderForm');
+        if (orderForm) {
+            orderForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                const notification = document.getElementById('notification');
+                notification.style.display = 'flex';
+                notification.style.justifyContent = 'center';
+                const nameUser = document.getElementById("name");
+                const addressUser = document.getElementById("address");
+                const quantityUser = document.getElementById("quantity");
+                setTimeout(function () {
+                    notification.style.display = 'none';
+                    document.getElementById('order-form').style.display = 'none';
+                    nameUser.value = "";
+                    addressUser.value = "";
+                    quantityUser.value = "";
+                }, 5000);
+            });
+        } else {
+            console.error('Element with id "orderForm" not found.');
+        }
+    }
 });
+
