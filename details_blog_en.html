@@ -91,7 +91,7 @@
                     <a class="tajawal_medium nav-link" aria-current="page" href="blog_en.html"> Blog </a>
                 </li>
                 <li class="tajawal_medium nav-item ">
-                    <a class="tajawal_medium nav-link" href="blog_ar.html"> Arabic </a>
+                    <a class="tajawal_medium nav-link" href="details_blog_ar.html"> Arabic </a>
                 </li>
                 <li class="tajawal_medium nav-item ">
                     <a class="tajawal_medium nav-link" href="contact_en.html"> Contact </a>
@@ -125,11 +125,14 @@
                             <ul class="tajawal_medium dropdown-menu">
                                 <li><a class="tajawal_medium dropdown-item" href="about_en.html">About </a></li>
                                 <li><a class="tajawal_medium dropdown-item" href="team_en.html"> Team Members </a></li>
-                                <li><a class="tajawal_medium dropdown-item" href="testimonials_en.html">Testimonials </a></li>
+                                <li><a class="tajawal_medium dropdown-item" href="testimonials_en.html">Testimonials
+                                    </a></li>
                                 <li><a class="tajawal_medium dropdown-item" href="price_en.html">Pricing </a></li>
                                 <li><a class="tajawal_medium dropdown-item" href="faq_en.html">FAQ </a></li>
-                                <li><a class="tajawal_medium dropdown-item" href="customOne_en.html">Custom Page 1 </a></li>
-                                <li><a class="tajawal_medium dropdown-item" href="customTwo_en.html">Custom Page 2 </a></li>
+                                <li><a class="tajawal_medium dropdown-item" href="customOne_en.html">Custom Page 1 </a>
+                                </li>
+                                <li><a class="tajawal_medium dropdown-item" href="customTwo_en.html">Custom Page 2 </a>
+                                </li>
                             </ul>
                         </li>
                         <li class="tajawal_medium nav-item">
@@ -145,7 +148,7 @@
                             <a class="tajawal_medium nav-link" aria-current="page" href="blog_en.html">Blog </a>
                         </li>
                         <li class="tajawal_medium nav-item ">
-                            <a class="tajawal_medium nav-link" href="blog_ar.html"> Arabic </a>
+                            <a class="tajawal_medium nav-link" href="details_blog_ar.html"> Arabic </a>
                         </li>
                         <li class="tajawal_medium nav-item ">
                             <a class="tajawal_medium nav-link" href="contact_en.html">Contact </a>
@@ -160,7 +163,7 @@
         <div class="auto-container">
             <div class="title-outer">
                 <h1 class="tajawal_extrabold text_addrees">
-                   Blog Detailes
+                    Blog Detailes
                 </h1>
                 <div class="text_bg">
                     <a href="home_en.html" class="tajawal_light link_item"> Home </a>
@@ -172,6 +175,56 @@
             </div>
         </div>
     </section>
+
+    <section class="section_detailes_blogs">
+        <div class="container-fluid">
+            <div class="container_Blogs">
+                <div class="Blog-details row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="categories">
+                            <h2 class="tajawal_black">Categories</h2>
+                            <ul>
+                                <li><a target="_blank" 
+                                    href="category_en.html?category=business" class="tajawal_extrabold">Business
+                                </a></li>
+                                <li><a target="_blank" 
+                                    href="category_en.html?category=digital-agency" class="tajawal_extrabold">Digital Agency
+                                </a></li>
+                                <li><a target="_blank" 
+                                    href="category_en.html?category=technology" class="tajawal_extrabold">Technology
+                                </a></li>
+                                <li><a target="_blank" 
+                                    href="category_en.html?category=web-design" class="tajawal_extrabold">Web Design
+                                </a></li>
+                                <li><a target="_blank" 
+                                    href="category_en.html?category=web-development" class="tajawal_extrabold">Web Development
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-sm-12">
+                        <div class="Blog-content">
+                           <div class="content_boxs_top_images">
+                            <img id="Blog_image" src="" alt="Project Image">
+                           </div>
+                            <div class="Blog-info">
+                                <p id="Blog_date"></p>
+                                <p id="Blog_client"></p>
+                                <p id="Blog_description"></p>
+                                <p id="Blog_tags"></p>
+                            </div>
+                        </div>
+                        <div class="Blog-navigation">
+                            <button id="prev-button" class="button_goBack_page">Previous</button>
+                            <button id="next-button" class="button_goBack_page">Next</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- التذييل -->
     <footer>
         <div class="tajawal_medium footer-container">
@@ -215,6 +268,75 @@
     </footer>
 
     <a href="#" id="scroll"><span></span></a>
+    <script>
+        const blogs = [
+            {
+                date: '23 March, 2023',
+                client: 'Admin',
+                Tags: 'Web design , social , UI , UX',
+                description: 'Web Design Essentials for Optimal User Experience encompass key elements that ensure websites are not only visually appealing but also user-friendly, fast-loading, and compatible with various devices, thereby enhancing user interaction and satisfaction.',
+                image: 'image/slide1.jpg',
+                name: 'Web Design Essentials for Optimal User Experience'
+            },
+            {
+                date: '15 April, 2023',
+                client: 'Admin',
+                Tags: 'Web Design , Social , UI , Agency , Business',
+                description: 'Achieving social media success requires advanced professional strategies that include a deep understanding of the target audience, creating engaging and impactful content, utilizing analytics tools to monitor and continuously improve performance, along with active and ongoing interaction with followers to build strong relationships and enhance loyalty, ultimately leading to increased reach, influence, and sustainable growth.',
+                image: 'image/slide2.jpg',
+                name: 'Social Media Success: Pro Strategies for You'
+            },
+            {
+                date: '10 May, 2023',
+                client: 'Admin',
+                Tags: 'Web design , social , UI , Business , strategies',
+                description: 'Mastering digital branding requires a comprehensive and integrated approach that begins with developing a strong and distinctive brand identity reflecting the company values and vision, followed by consistent and effective content management across various digital channels, and leveraging advanced analytics tools to measure success and adapt to shifting market trends, ultimately contributing to building a prominent and established digital presence that enhances brand credibility and achieves business objectives.',
+                image: 'image/welcome_about(2).jpg',
+                name: 'Digital Branding Mastery: Your Ultimate Guide'
+            }
+        ];
+
+        let currentProjectIndex = 0;
+
+        document.getElementById('prev-button').addEventListener('click', () => {
+            if (currentProjectIndex > 0) {
+                currentProjectIndex--;
+                updateProjectDetails();
+            }
+        });
+
+        document.getElementById('next-button').addEventListener('click', () => {
+            if (currentProjectIndex < blogs.length - 1) {
+                currentProjectIndex++;
+                updateProjectDetails();
+            }
+        });
+
+        function updateProjectDetails() {
+            const blog = blogs[currentProjectIndex];
+            document.getElementById('Blog_date').innerHTML = `<span class="tajawal_black"> Date: </span> ${blog.date}`;
+            document.getElementById('Blog_client').innerHTML = `<span class="tajawal_black"> Client: </span> ${blog.client}`;
+            document.getElementById('Blog_tags').innerHTML = `<span class="style_span_tags tajawal_black"> Tags: <span/> ${blog.Tags}`;
+            document.getElementById('Blog_description').textContent = blog.description;
+            document.getElementById('Blog_image').src = blog.image;
+
+            const url = new URL(window.location);
+            url.searchParams.set('blog', blog.name);
+            window.history.pushState({}, '', url);
+        }
+
+        window.onload = () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const projectName = urlParams.get('blog');
+            if (projectName) {
+                const projectIndex = blogs.findIndex(blog => blog.name === projectName);
+                if (projectIndex !== -1) {
+                    currentProjectIndex = projectIndex;
+                }
+            }
+            updateProjectDetails();
+        };
+    </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
