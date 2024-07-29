@@ -208,20 +208,6 @@
                                 </a></li>
                                 <li><a  target="_blank" 
                                     href="category_ar.html?category=web-development" class="tajawal_extrabold">
-                                <li><a href="category_ar.html?category=business" class="tajawal_extrabold">
-                                    عمل
-                                </a></li>
-                                <li><a href="category_ar.html?category=digital-agency" class="tajawal_extrabold">
-                                    الوكالة الرقمية
-                                </a></li>
-                                <li><a href="category_ar.html?category=technology"
-                                        class="tajawal_extrabold">
-                                    تكنولوجيا
-                                </a></li>
-                                <li><a href="category_ar.html?category=web-design" class="tajawal_extrabold">
-                                    تصميم الويب
-                                </a></li>
-                                <li><a href="category_ar.html?category=web-development" class="tajawal_extrabold">
                                     تطوير الشبكة
                                 </a></li>
                             </ul>
@@ -233,7 +219,6 @@
                                 <img id="Blog_image" src="" alt="Project Image">
                             </div>
 
-                            <img id="Blog_image" src="" alt="Project Image">
                             <div class="Blog-info">
                                 <p id="Blog_date"></p>
                                 <p id="Blog_client"></p>
@@ -247,12 +232,6 @@
                                 سابق
                             </button>
                             <button id="next-button" class="button_goBack_page">
-
-                            <button id="prev-button">
-                                سابق
-                            </button>
-                            <button id="next-button">
-
                                 التالي
                             </button>
                         </div>
@@ -383,11 +362,6 @@
             document.getElementById('Blog_date').innerHTML = `<span class="tajawal_black"> التاريخ: </span> ${blog.date}`;
             document.getElementById('Blog_client').innerHTML = `<span class="tajawal_black"> العميل: </span> ${blog.client}`;
             document.getElementById('Blog_tags').innerHTML = `<span class="style_span_tags tajawal_black"> العلامات: <span/> ${blog.Tags}`;
-
-            document.getElementById('Blog_date').innerHTML = `<span class="tajawal_black"> Date: </span> ${blog.date}`;
-            document.getElementById('Blog_client').innerHTML = `<span class="tajawal_black"> Client: </span> ${blog.client}`;
-            document.getElementById('Blog_tags').innerHTML = `<span class="style_span_privet tajawal_black"> Tags: <span/> ${blog.Tags}`;
-
             document.getElementById('Blog_description').textContent = blog.description;
             document.getElementById('Blog_image').src = blog.image;
 

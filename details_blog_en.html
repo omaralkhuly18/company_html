@@ -200,18 +200,6 @@
                                 <li><a target="_blank" 
                                     href="category_en.html?category=web-development" class="tajawal_extrabold">Web Development
                                 </a></li>
-
-                                <li><a href="category_en.html?category=business" class="tajawal_extrabold">Business</a>
-                                </li>
-                                <li><a href="category_en.html?category=digital-agency" class="tajawal_extrabold">Digital
-                                        Agency</a></li>
-                                <li><a href="category_en.html?category=technology" class="tajawal_extrabold">Technology</a>
-                                </li>
-                                <li><a href="category_en.html?category=web-design" class="tajawal_extrabold">Web Design</a>
-                                </li>
-                                <li><a href="category_en.html?category=web-development" class="tajawal_extrabold">Web
-                                        Development</a></li>
-
                             </ul>
                         </div>
                     </div>
@@ -235,8 +223,6 @@
                             <button id="prev-button" class="button_goBack_page">Previous</button>
                             <button id="next-button" class="button_goBack_page">Next</button>
 
-                            <button id="prev-button">Previous</button>
-                            <button id="next-button">Next</button>
 
                         </div>
                     </div>
@@ -337,11 +323,7 @@
             const blog = blogs[currentProjectIndex];
             document.getElementById('Blog_date').innerHTML = `<span class="tajawal_black"> Date: </span> ${blog.date}`;
             document.getElementById('Blog_client').innerHTML = `<span class="tajawal_black"> Client: </span> ${blog.client}`;
-
             document.getElementById('Blog_tags').innerHTML = `<span class="style_span_tags tajawal_black"> Tags: <span/> ${blog.Tags}`;
-
-            document.getElementById('Blog_tags').innerHTML = `<span class="style_span_privet tajawal_black"> Tags: <span/> ${blog.Tags}`;
-
             document.getElementById('Blog_description').textContent = blog.description;
             document.getElementById('Blog_image').src = blog.image;
 

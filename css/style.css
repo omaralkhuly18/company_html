@@ -2817,6 +2817,125 @@ section.section_detailes {
 
 /* Blog style */
 
+/* Details Blogs */
+.container_Blogs {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.Blog-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.Blog-navigation button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Blog-navigation button:hover {
+    background: #0056b3;
+}
+
+.Blog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content_boxs_top_images{
+    width: 100%;
+    height: 430px;
+}
+
+.content_boxs_top_images img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.Blog-info p {
+    margin-bottom: 10px;
+}
+
+.tajawal_black {
+    font-weight: bold;
+}
+
+.style_span_privet {
+    color: #007BFF;
+}
+
+/* taps catogiery style */
+.section_category_tabs {
+    margin: 5% 10%;
+}
+
+@media screen and (max-width: 770px) and (min-width: 230px) {
+    .section_category_tabs {
+        margin: 5% 0 !important;
+    }
+}
+
+#content {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.categories {
+    background-color: #002f4b;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.categories h2 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories ul li {
+    margin-bottom: 10px;
+}
+
+.categories ul li a {
+    text-decoration: none;
+    color: #002f4b;
+    background-color: #ff6600;
+    border: 1px solid #ff9149;
+    font-size: 17px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.categories ul li a:hover {
+    background-color: #002f4b;
+    color: white;
+}
+
+/* taps catogiery style */
+/* Details Blogs */
+
 /* footer style start*/
 .footer-container {
     display: flex;
@@ -3023,3 +3142,40 @@ section.section_detailes {
 }
 
 /* Notifications style */
+/* slider always */
+.section_banner_img{
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marquee-container {
+    width: 80%;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+}
+
+.marquee {
+    display: flex;
+    width: 100%;
+    animation: scroll 20s linear infinite;
+}
+
+
+.hover-svg:hover .a {
+    fill: #ff0000;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* slider always */
