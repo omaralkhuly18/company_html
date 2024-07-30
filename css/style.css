@@ -23,6 +23,12 @@ li {
     list-style: none;
 }
 
+.control-round .carousel-control.right>span:nth-child(1) {
+    right: 32% !important;
+    top: 25%;
+    position: absolute;
+}
+
 .dropdown-menu>li>a:hover {
     color: #262626 !important;
 }
@@ -445,6 +451,10 @@ span.phone_topbar {
     .offcanvas-body {
         height: 270px;
         overflow-Y: scroll;
+    }
+
+    .control-round .carousel-control{
+        top: 60% !important;
     }
 
     .label-fullName {
