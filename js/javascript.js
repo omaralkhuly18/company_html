@@ -141,18 +141,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (targetPages.includes(currentPath)) {
         const orderForm = document.getElementById('orderForm');
+        const orderFormContainer = document.getElementById('order-form');
+        const notification = document.getElementById('notification');
+        const openFormButton = document.getElementById('open-form');
+        const closeFormButton = document.getElementById('close-form');
+
         if (orderForm) {
+            openFormButton.addEventListener('click', function () {
+                orderFormContainer.style.display = 'block';
+            });
+
+            closeFormButton.addEventListener('click', function () {
+                orderFormContainer.style.display = 'none';
+            });
+
             orderForm.addEventListener('submit', function (event) {
                 event.preventDefault();
-                const notification = document.getElementById('notification');
                 notification.style.display = 'flex';
                 notification.style.justifyContent = 'center';
+                
                 const nameUser = document.getElementById("name");
                 const addressUser = document.getElementById("address");
                 const quantityUser = document.getElementById("quantity");
                 setTimeout(function () {
                     notification.style.display = 'none';
-                    document.getElementById('order-form').style.display = 'none';
+                    orderFormContainer.style.display = 'none';
                     nameUser.value = "";
                     addressUser.value = "";
                     quantityUser.value = "";

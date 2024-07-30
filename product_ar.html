@@ -47,9 +47,11 @@
             </div>
             <div class="tajawal_medium d-flex align-items-center bg-orange conictionLink_style px-3 py-2">
                 <a href="contact_ar.html" class="tajawal_medium text-white">
-                    التواصل
+                    <span>
+                        التواصل
+                    </span>
+                    <i class=" fas fa-arrow-left ms-2 text-white"></i>
                 </a>
-                <i class=" fas fa-arrow-left ms-2 text-white"></i>
             </div>
         </div>
     </div>
@@ -125,14 +127,14 @@
                                 الصفحات
                             </a>
                             <ul class="tajawal_medium dropdown-menu">
-                                <li><a class="tajawal_medium dropdown-item" href="about_ar"> حول </a></li>
+                                <li><a class="tajawal_medium dropdown-item" href="about_ar.html"> حول </a></li>
                                 <li><a class="tajawal_medium dropdown-item" href="team_ar.html"> أعضاء الفريق </a></li>
                                 <li><a class="tajawal_medium dropdown-item" href="testimonials_ar.html"> الآراء </a></li>
                                 <li><a class="tajawal_medium dropdown-item" href="price_ar.html"> الأسعار </a></li>
                                 <li><a class="tajawal_medium dropdown-item" href="faq_ar.html"> FAQ </a></li>
-                                <li><a class="tajawal_medium dropdown-item" href="customOne_ar"> الصفحه المتخصه 1 </a>
+                                <li><a class="tajawal_medium dropdown-item" href="customOne_ar.html"> الصفحه المتخصه 1 </a>
                                 </li>
-                                <li><a class="tajawal_medium dropdown-item" href="customTwo_ar"> الصفحه المتخصه 2 </a>
+                                <li><a class="tajawal_medium dropdown-item" href="customTwo_ar.html"> الصفحه المتخصه 2 </a>
                                 </li>
                             </ul>
                         </li>
@@ -146,7 +148,7 @@
                             <a class="tajawal_medium nav-link" href="portfolio_ar.html"> الصفحه الشخصيه </a>
                         </li>
                         <li class="tajawal_medium nav-item ">
-                            <a class="tajawal_medium nav-link" aria-current="page" href="blog_ar"> مدونه </a>
+                            <a class="tajawal_medium nav-link" aria-current="page" href="blog_ar.html"> مدونه </a>
                         </li>
                         <li class="tajawal_medium nav-item ">
                             <a class="tajawal_medium nav-link" href="product_en.html"> الإنجليزية </a>
@@ -188,7 +190,7 @@
                 <p class="tajawal_light price-before">السعر: <span>91000</span></p>
                 <p class="tajawal_light price-after">بعد الخصم: <span>90000</span></p>
                 <p class="tajawal_light quantity">الكمية: 5</p>
-                <button class="tajawal_black about-us-btn"  data-id="1">صفحة المنتج</button>
+                <button class="tajawal_black about-us-btn" id="open-form"  data-id="1">صفحة المنتج</button>
                 <button class="tajawal_black order-btn">طلب الآن</button>
             </div>
             <div class="product-card">
@@ -199,7 +201,7 @@
                 <p class="tajawal_light price-before">السعر: <span>2500</span></p>
                 <p class="tajawal_light price-after">بعد الخصم: <span>2400</span></p>
                 <p class="tajawal_light quantity">الكمية: 10</p>
-                <button class="tajawal_black about-us-btn"  data-id="2">صفحة المنتج</button>
+                <button class="tajawal_black about-us-btn" id="open-form"  data-id="2">صفحة المنتج</button>
                 <button class="tajawal_black order-btn">طلب الآن</button>
             </div>
             <div class="product-card">
@@ -209,7 +211,7 @@
                 <h3 class="tajawal_blod"> سيارات </h3>
                 <p class="tajawal_light price-before">السعر: <span>500000</span></p>
                 <p class="tajawal_light quantity">الكمية: 10</p>
-                <button class="tajawal_black about-us-btn"  data-id="3">صفحة المنتج</button>
+                <button class="tajawal_black about-us-btn" id="open-form"  data-id="3">صفحة المنتج</button>
                 <button class="tajawal_black order-btn">طلب الآن</button>
             </div>
         </div>
@@ -231,7 +233,7 @@
         </div>
     </section>
 
-    <div id="notification" class="notification_products">
+    <div id="notification" class="notification_products" style="display: none;">
         <div class="content_notificatian">
             <span>
                 تم ارسال الطلب بنجاح

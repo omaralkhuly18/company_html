@@ -83,3 +83,7 @@ a.dropdown-item {
 .accordion-button{
     text-align: justify;
 }
+
+.conictionLink_style i {
+    transform: rotate(0deg);
+}

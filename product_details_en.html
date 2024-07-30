@@ -45,9 +45,11 @@
                 </div>
             </div>
             <div class="tajawal_medium d-flex align-items-center bg-orange conictionLink_style px-3 py-2">
-                <i class=" fas fa-arrow-left ms-2 text-white"></i>
                 <a href="contact_en.html" class="tajawal_medium text-white">
-                    call us
+                    <span>
+                        call us
+                    </span>
+                    <i class=" fas fa-arrow-left ms-2 text-white"></i>
                 </a>
             </div>
         </div>
@@ -200,7 +202,7 @@
                         <p class="tajawal_light price-before">the price: <span>91000</span></p>
                         <p class="tajawal_light price-after">after Discount: <span>90000</span></p>
                         <p class="tajawal_light quantity">Quantity: 5</p>
-                        <button class="tajawal_black order-btn">to request now</button>
+                        <button class="tajawal_black order-btn" id="open-form">to request now</button>
                     </div>
                 </div>
             </div>
@@ -220,7 +222,7 @@
                         <p class="tajawal_light price-before">the price: <span>2500</span></p>
                         <p class="tajawal_light price-after">after Discount: <span>2400</span></p>
                         <p class="tajawal_light quantity">Quantity: 10</p>
-                        <button class="tajawal_black order-btn">to request now</button>
+                        <button class="tajawal_black order-btn" id="open-form">to request now</button>
                     </div>
                 </div>
             </div>
@@ -239,7 +241,7 @@
                         </p>
                         <p class="tajawal_light price-before">the price: <span>500000</span></p>
                         <p class="tajawal_light quantity">Quantity: 10</p>
-                        <button class="tajawal_black order-btn">to request now</button>
+                        <button class="tajawal_black order-btn" id="open-form">to request now</button>
                     </div>
                 </div>
             </div>
@@ -254,14 +256,14 @@
                     <input type="text" id="address" name="address" required>
                     <label class="tajawal_light" for="quantity">Quantity:</label>
                     <input type="number" id="quantity" name="quantity" required>
-                    <button type="submit" class="tajawal_black mb-5" id="send-demand">send the demand</button>
+                    <button class="tajawal_black mb-5"  id="send-demand" type="submit">send the demand</button>
                     <button type="button" class="tajawal_black" id="close-form">Close</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <div id="notification" class="notification">
+    <div id="notification" class="notification" style="display: none;">
         <div class="content_notificatian">
             <span>
                 The request has been sent successfully
