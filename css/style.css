@@ -23,10 +23,18 @@ li {
     list-style: none;
 }
 
-.control-round .carousel-control.right>span:nth-child(1) {
-    right: 32% !important;
+.control-round .carousel-control.right>span:nth-child(1),
+.control-round .carousel-control.left>span:nth-child(1) {
     top: 25%;
     position: absolute;
+}
+
+.control-round .carousel-control.right>span:nth-child(1) {
+    right: 32% !important;
+}
+
+.control-round .carousel-control.left>span:nth-child(1){
+    right: 32% !important;
 }
 
 .dropdown-menu>li>a:hover {
